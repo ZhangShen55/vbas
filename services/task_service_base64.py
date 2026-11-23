@@ -101,25 +101,8 @@ def log_duration(tag: str, start_time: float):
     duration_ms = (time.time() - start_time) * 1000
     logger.info(f"[Timing] {tag}: {duration_ms:.2f} ms")
 
-async def process_polygon(idx, poly, img, target_height, target_width, TaskID):
-    poly_start = time.time()
-    logger.info(f"[Polygon-{idx}] Start processing poly Label: [{poly.Label}]")
-
-    mask_start = time.time()
-    subimg, (ox, oy) = mask_polygon(img, poly.Points)
-    log_duration(f"[Polygon-{idx}] mask_polygon", mask_start)
-
-    # ---------- 0) 空图保护 ----------
-    h, w = subimg.shape[:2]
-    if h == 0 or w == 0:
-        logger.error(f"TaskID={TaskID} error [liuw] [Polygon-{idx}] Empty ROI (h={h}, w={w}), skip YOLO inference.")
-        return PolygonResult(
-            Label=poly.Label,
-            PersonInfo=PersonInfo(PersonCnt=0, Personlist=[]),
-            FaceInfo=FaceInfo(FaceCnt=0, Facelist=[]),
-        )
-    # ------------------------------
-
+def _detect_person(subimg, offset, target_height, target_width, idx):
+    ox, oy = offset
     # —— 1) todo Person 检测 & 聚合到 PersonInfo ——
     person_start = time.time()
     person_model_start = time.time()
@@ -152,6 +135,10 @@ async def process_polygon(idx, poly, img, target_height, target_width, TaskID):
     logger.info(
         f"[Polygon-{idx}] Person detection result: {len(person_positions)} person(s) detected(>PersonThresd)")
 
+    return person_info
+
+def _detect_face(subimg, offset, target_height, target_width, idx):
+    ox, oy = offset
     # —— 2) todo Face 检测 & 聚合到 FaceInfo ——
     face_start = time.time()
     face_model_start = time.time()
@@ -176,6 +163,52 @@ async def process_polygon(idx, poly, img, target_height, target_width, TaskID):
         Facelist=face_positions,
     )
     logger.info(f"[Polygon-{idx}] Face detection result: {len(face_positions)} face(s) detected(>FaceThresd)")
+    return face_info
+
+async def _detect_models_parallel(subimg, offset, target_height, target_width, idx):
+    # Drain both branches before propagating a failure or cancellation.
+    pending = asyncio.gather(
+        asyncio.to_thread(_detect_person, subimg, offset, target_height, target_width, idx),
+        asyncio.to_thread(_detect_face, subimg, offset, target_height, target_width, idx),
+        return_exceptions=True,
+    )
+    cancelled = False
+    while True:
+        try:
+            results = await asyncio.shield(pending)
+            break
+        except asyncio.CancelledError:
+            cancelled = True
+    if cancelled:
+        raise asyncio.CancelledError
+    for result in results:
+        if isinstance(result, BaseException):
+            raise result
+    return results
+
+
+async def process_polygon(idx, poly, img, target_height, target_width, TaskID):
+    poly_start = time.time()
+    logger.info(f"[Polygon-{idx}] Start processing poly Label: [{poly.Label}]")
+
+    mask_start = time.time()
+    subimg, (ox, oy) = mask_polygon(img, poly.Points)
+    log_duration(f"[Polygon-{idx}] mask_polygon", mask_start)
+
+    # ---------- 0) 空图保护 ----------
+    h, w = subimg.shape[:2]
+    if h == 0 or w == 0:
+        logger.error(f"TaskID={TaskID} error [liuw] [Polygon-{idx}] Empty ROI (h={h}, w={w}), skip YOLO inference.")
+        return PolygonResult(
+            Label=poly.Label,
+            PersonInfo=PersonInfo(PersonCnt=0, Personlist=[]),
+            FaceInfo=FaceInfo(FaceCnt=0, Facelist=[]),
+        )
+    # ------------------------------
+
+    person_info, face_info = await _detect_models_parallel(
+        subimg, (ox, oy), target_height, target_width, idx
+    )
     result = PolygonResult(
         Label=poly.Label,
         PersonInfo=person_info,
@@ -234,10 +267,12 @@ async def sync_tasks_data(task_info: TaskInfo) -> SyncTasksResponse:
         dst_uri = f"{img_info.ImageID}_dst.jpg"
         dst_local_path = os.path.join(settings.IMAGE_ROOT, dst_uri)
 
-        # 区域并行
-        tasks = [process_polygon(idx, poly, img, target_height, target_width, task_info.TaskID)
-                 for idx, poly in enumerate(task_info.AnalysisRule.AlgParams.PolygonList or [])]
-        region_results: list[PolygonResult] = list(await asyncio.gather(*tasks))
+        # Keep ROI ordering; only the two models within each ROI run concurrently.
+        region_results = []
+        for idx, poly in enumerate(polygon_list):
+            region_results.append(await process_polygon(
+                idx, poly, img, target_height, target_width, task_info.TaskID
+            ))
 
         if task_info.AnalysisRule.AlgParams.ResultImageDeclare == 1:
             logger.warning(f"ResultImageDeclare={task_info.AnalysisRule.AlgParams.ResultImageDeclare}")
