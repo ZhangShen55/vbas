@@ -1,0 +1,271 @@
+{
+  "code": "3f77bfdcb197fd7bb957e45104342389ed3daca7",
+  "workers": 4,
+  "source_summary_sha256": "2f8e758f804527469bd712e158e39fef125393c1d3cc78f611c4942f787360ff",
+  "historical_checksums_sha256": "10444d2644a3c6f73aa0724a31b1f7d60d492a3e33fabb1c612fa2ed79cb28e3",
+  "script_sha256": "9fc71f254044f14c9ac844a00c5271e78b5e431a96ed2d458a7ea5676593ec71",
+  "points": [
+    {
+      "name": "sync",
+      "C": 1,
+      "workers": 4,
+      "requests": 300,
+      "source_run_id": "uvicorn-workers-fixed100-20261123-w4-r2",
+      "latency_ms": {
+        "mean": 69.43904637902354,
+        "p50": 69.52361192088574,
+        "p95": 72.68164064735174,
+        "p99": 76.05511003406717
+      },
+      "median_100_makespan_s": 6.9521495858207345,
+      "amortized_ms_per_image": 69.52149585820735,
+      "sources": [
+        {
+          "label": "sync-r1-c1",
+          "responses_sha256": "83ca22cedb043bd672cc559f7e6655d9a06eaba7a4ead147e1f3acefe0784b54"
+        },
+        {
+          "label": "sync-r2-c1",
+          "responses_sha256": "40065aad247ed42749b7995a7c6686dd0ff140f8af991ec7064fa8c86ec0c3aa"
+        },
+        {
+          "label": "sync-r3-c1",
+          "responses_sha256": "b8731489220331f000ff726a0371958fe37f0d672e6d7d59b5d87c0ca103b792"
+        }
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 8,
+      "workers": 4,
+      "requests": 300,
+      "source_run_id": "uvicorn-w4-c8-c16-fixed100-20261123-r1",
+      "latency_ms": {
+        "mean": 345.19835903076455,
+        "p50": 262.89236347656697,
+        "p95": 726.137653994374,
+        "p99": 738.3420100435613
+      },
+      "median_100_makespan_s": 4.39342468092218,
+      "amortized_ms_per_image": 43.934246809221804,
+      "sources": [
+        {
+          "label": "sync-r1-c8",
+          "responses_sha256": "5540c68729f9ba7c9d1244d67c99988c127b2dcfb2e7e3fc8049f1932a9f3578"
+        },
+        {
+          "label": "sync-r2-c8",
+          "responses_sha256": "b1baad524863b48268cbc36ae41e215e0f9e1d1cb5a5d5aa58db6a48aef267b3"
+        },
+        {
+          "label": "sync-r3-c8",
+          "responses_sha256": "3eb58a006bb853a8a8e39ce14eb1fbfbbeab08e2496e125068f2e8553f616040"
+        }
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 16,
+      "workers": 4,
+      "requests": 300,
+      "source_run_id": "uvicorn-w4-c8-c16-fixed100-20261123-r1",
+      "latency_ms": {
+        "mean": 648.4247550857253,
+        "p50": 390.0195818860084,
+        "p95": 1894.8604232398793,
+        "p99": 2072.115518352948
+      },
+      "median_100_makespan_s": 4.220053666969761,
+      "amortized_ms_per_image": 42.20053666969761,
+      "sources": [
+        {
+          "label": "sync-r1-c16",
+          "responses_sha256": "8c90f7edd160a340aca3e78e196449fef6807ef9ce02e0abfa10fa152b67ec9e"
+        },
+        {
+          "label": "sync-r2-c16",
+          "responses_sha256": "337c1a98e200b0fb049ee14c2bca2f05afbdc94c94d0701a216a8f1f6f6cc053"
+        },
+        {
+          "label": "sync-r3-c16",
+          "responses_sha256": "060c60aa696512c9f2da58fba36169ee02588610c7292c7072fed55d400246ea"
+        }
+      ]
+    },
+    {
+      "name": "student",
+      "C": 1,
+      "workers": 4,
+      "requests": 300,
+      "source_run_id": "uvicorn-workers-fixed100-20261123-w4-r2",
+      "latency_ms": {
+        "mean": 76.31075906024004,
+        "p50": 76.44740701653063,
+        "p95": 79.95169163914397,
+        "p99": 82.95712266350164
+      },
+      "median_100_makespan_s": 7.5889487150125206,
+      "amortized_ms_per_image": 75.8894871501252,
+      "sources": [
+        {
+          "label": "student-r1-c1",
+          "responses_sha256": "59bde2b2a39c238a8facb65cf205226c9773c44f5f684254d847b47e7a41ab57"
+        },
+        {
+          "label": "student-r2-c1",
+          "responses_sha256": "713c588facca668b1dfd9751195fc25ab9285712f3b5df52593d7a72368ea972"
+        },
+        {
+          "label": "student-r3-c1",
+          "responses_sha256": "e5bf33099569c560d33f2a83c6f0858e84a55bb7739c56f37d90c65b6799b90d"
+        }
+      ]
+    },
+    {
+      "name": "student",
+      "C": 8,
+      "workers": 4,
+      "requests": 300,
+      "source_run_id": "uvicorn-w4-c8-c16-fixed100-20261123-r1",
+      "latency_ms": {
+        "mean": 438.81382321628433,
+        "p50": 434.87863207701594,
+        "p95": 811.5079046227039,
+        "p99": 893.3442588266917
+      },
+      "median_100_makespan_s": 5.626443770946935,
+      "amortized_ms_per_image": 56.26443770946935,
+      "sources": [
+        {
+          "label": "student-r1-c8",
+          "responses_sha256": "1b8808c9e79d6f90ffdff32cbaf7077cfae2b795d4687a1119eec045956a2ec6"
+        },
+        {
+          "label": "student-r2-c8",
+          "responses_sha256": "867b3b7c36389db21305f258182e172dc77eb8ae435a96a86c9d8c455662440e"
+        },
+        {
+          "label": "student-r3-c8",
+          "responses_sha256": "dc1d5779b9b01486b72cf94fabefcd0ff3a1e3046ffdf34e19c6a3f8d4e18ce2"
+        }
+      ]
+    },
+    {
+      "name": "student",
+      "C": 16,
+      "workers": 4,
+      "requests": 300,
+      "source_run_id": "uvicorn-w4-c8-c16-fixed100-20261123-r1",
+      "latency_ms": {
+        "mean": 836.7377552987697,
+        "p50": 550.4591724602506,
+        "p95": 2275.966872286517,
+        "p99": 2358.945492436178
+      },
+      "median_100_makespan_s": 5.544189953012392,
+      "amortized_ms_per_image": 55.44189953012392,
+      "sources": [
+        {
+          "label": "student-r1-c16",
+          "responses_sha256": "30538f73f648ad18960183544a9db5bed8f27b405e74fd5511032c693f1e6e6f"
+        },
+        {
+          "label": "student-r2-c16",
+          "responses_sha256": "4522187c9afd48eea053ef1188f7e065dffcd941918e89760a944332731c1938"
+        },
+        {
+          "label": "student-r3-c16",
+          "responses_sha256": "e7f8fad858e4880632c60216fc324ab6252420173825bddc7feac62b3140d26a"
+        }
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 1,
+      "workers": 4,
+      "requests": 300,
+      "source_run_id": "uvicorn-workers-fixed100-20261123-w4-r2",
+      "latency_ms": {
+        "mean": 21.905606637398403,
+        "p50": 21.947649074718356,
+        "p95": 24.536785669624805,
+        "p99": 26.4071010844782
+      },
+      "median_100_makespan_s": 2.186792792053893,
+      "amortized_ms_per_image": 21.867927920538932,
+      "sources": [
+        {
+          "label": "teacher-r1-c1",
+          "responses_sha256": "c77526fee189a75f03fda0167a6ccc41dd7066d5d683dfc39c3b55eaf774c334"
+        },
+        {
+          "label": "teacher-r2-c1",
+          "responses_sha256": "5fc950d672b3f3b82b5ffa30ad4bb4ea1e79672c43c494b41d4c406403bfdbe4"
+        },
+        {
+          "label": "teacher-r3-c1",
+          "responses_sha256": "03d7be2274de5c7683cac0c3558b9320da6e9f8ac26fea020d486573fd2884b8"
+        }
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 8,
+      "workers": 4,
+      "requests": 300,
+      "source_run_id": "uvicorn-w4-c8-c16-fixed100-20261123-r1",
+      "latency_ms": {
+        "mean": 59.444778444400676,
+        "p50": 52.872955915518105,
+        "p95": 109.36059086816385,
+        "p99": 122.95041823759674
+      },
+      "median_100_makespan_s": 0.8113511099945754,
+      "amortized_ms_per_image": 8.113511099945754,
+      "sources": [
+        {
+          "label": "teacher-r1-c8",
+          "responses_sha256": "7378f4c6490063055572709ee4366bc8c4699d128b440a7fa5e98e09145de179"
+        },
+        {
+          "label": "teacher-r2-c8",
+          "responses_sha256": "2862cc1933a0fb1e53f0af3e9b00195d55fc8b78eb8fea0ebbd5d61cb833d1a4"
+        },
+        {
+          "label": "teacher-r3-c8",
+          "responses_sha256": "b7d686b0b3badc76589d7e9cd8f0f2ef36aec9ad843691d409cee3e17e1480a4"
+        }
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 16,
+      "workers": 4,
+      "requests": 300,
+      "source_run_id": "uvicorn-w4-c8-c16-fixed100-20261123-r1",
+      "latency_ms": {
+        "mean": 128.32069296079376,
+        "p50": 120.64225156791508,
+        "p95": 241.99034925550225,
+        "p99": 261.2165408162399
+      },
+      "median_100_makespan_s": 0.8437346150167286,
+      "amortized_ms_per_image": 8.437346150167286,
+      "sources": [
+        {
+          "label": "teacher-r1-c16",
+          "responses_sha256": "4db90b1870a6ab3788527dd44b99ae4c07fde586e55a811af72149f000da39e1"
+        },
+        {
+          "label": "teacher-r2-c16",
+          "responses_sha256": "aa6da3e872369198e986a3fa555491c738ca56cd09a7995a70aa79227cb158a1"
+        },
+        {
+          "label": "teacher-r3-c16",
+          "responses_sha256": "91939232ae6925a106a55aa5c40ed413a69bb179b0aa43bdb5b26c75470c4a41"
+        }
+      ]
+    }
+  ],
+  "scope": "客户端每次发送POST至完整response body收到；含客户端/连接/HTTP/服务内等待及图像业务处理，非纯模型forward。C1为历史独立测试，C8/C16为本轮复核；各档合并3轮300条。amortized_ms_per_image仅为吞吐摊销，非并发下单请求时延。"
+}
