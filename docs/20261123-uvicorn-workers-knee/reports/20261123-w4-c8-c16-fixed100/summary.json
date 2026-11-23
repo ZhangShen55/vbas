@@ -1,0 +1,529 @@
+{
+  "schema": 1,
+  "code": "3f77bfdcb197fd7bb957e45104342389ed3daca7",
+  "run_id": "uvicorn-w4-c8-c16-fixed100-20261123-r1",
+  "plan_sha256": "476ca6cb88e15192ee1a66dc98fe34cb7a7d7434bc700a0a67973873611659e6",
+  "analyzer_sha256": "1a41e308535767710998c05225a63cf25cce902ae3f478b0600dfcdca07c51a8",
+  "groups": 18,
+  "requests": 1800,
+  "successful": 1800,
+  "failed": 0,
+  "points": [
+    {
+      "name": "sync",
+      "C": 8,
+      "seconds": [
+        4.591069608926773,
+        4.39342468092218,
+        4.309628309914842
+      ],
+      "median_s": 4.39342468092218,
+      "min_s": 4.309628309914842,
+      "max_s": 4.591069608926773,
+      "successful": 300,
+      "failed": 0,
+      "tps": 22.76128698284865,
+      "latency_ms": {
+        "p50": 262.89236347656697,
+        "p95": 726.137653994374,
+        "p99": 738.3420100435613
+      },
+      "historical_median_s": 4.5469810699578375,
+      "historical_p95_ms": 690.1592627284118
+    },
+    {
+      "name": "sync",
+      "C": 16,
+      "seconds": [
+        4.372410340933129,
+        4.220053666969761,
+        4.195279284147546
+      ],
+      "median_s": 4.220053666969761,
+      "min_s": 4.195279284147546,
+      "max_s": 4.372410340933129,
+      "successful": 300,
+      "failed": 0,
+      "tps": 23.696381110670966,
+      "latency_ms": {
+        "p50": 390.0195818860084,
+        "p95": 1894.8604232398793,
+        "p99": 2072.115518352948
+      },
+      "historical_median_s": 4.276332702953368,
+      "historical_p95_ms": 1918.3642729185522
+    },
+    {
+      "name": "student",
+      "C": 8,
+      "seconds": [
+        5.654505132930353,
+        5.626443770946935,
+        5.588493279181421
+      ],
+      "median_s": 5.626443770946935,
+      "min_s": 5.588493279181421,
+      "max_s": 5.654505132930353,
+      "successful": 300,
+      "failed": 0,
+      "tps": 17.7732159195061,
+      "latency_ms": {
+        "p50": 434.87863207701594,
+        "p95": 811.5079046227039,
+        "p99": 893.3442588266917
+      },
+      "historical_median_s": 5.506772740045562,
+      "historical_p95_ms": 947.8862707386725
+    },
+    {
+      "name": "student",
+      "C": 16,
+      "seconds": [
+        5.543510220013559,
+        5.681292460067198,
+        5.544189953012392
+      ],
+      "median_s": 5.544189953012392,
+      "min_s": 5.543510220013559,
+      "max_s": 5.681292460067198,
+      "successful": 300,
+      "failed": 0,
+      "tps": 18.036900042659216,
+      "latency_ms": {
+        "p50": 550.4591724602506,
+        "p95": 2275.966872286517,
+        "p99": 2358.945492436178
+      },
+      "historical_median_s": 5.5402275489177555,
+      "historical_p95_ms": 2416.8202847591606
+    },
+    {
+      "name": "teacher",
+      "C": 8,
+      "seconds": [
+        0.8113511099945754,
+        0.8229954959824681,
+        0.7394781669136137
+      ],
+      "median_s": 0.8113511099945754,
+      "min_s": 0.7394781669136137,
+      "max_s": 0.8229954959824681,
+      "successful": 300,
+      "failed": 0,
+      "tps": 123.25120255356352,
+      "latency_ms": {
+        "p50": 52.872955915518105,
+        "p95": 109.36059086816385,
+        "p99": 122.95041823759674
+      },
+      "historical_median_s": 0.8473989740014076,
+      "historical_p95_ms": 123.7367210444063
+    },
+    {
+      "name": "teacher",
+      "C": 16,
+      "seconds": [
+        0.7985646319575608,
+        1.0385684710927308,
+        0.8437346150167286
+      ],
+      "median_s": 0.8437346150167286,
+      "min_s": 0.7985646319575608,
+      "max_s": 1.0385684710927308,
+      "successful": 300,
+      "failed": 0,
+      "tps": 118.52067963102037,
+      "latency_ms": {
+        "p50": 120.64225156791508,
+        "p95": 241.99034925550225,
+        "p99": 261.2165408162399
+      },
+      "historical_median_s": 1.0128381960093975,
+      "historical_p95_ms": 331.21176144341007
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "sync",
+      "c16_over_c8_median_makespan": 0.9605385259692153,
+      "c16_time_reduction_percent": 3.9461474030784705,
+      "paired_ratios": [
+        0.9523729138045549,
+        0.9605385259692153,
+        0.9734666153217385
+      ],
+      "paired_ratio_median": 0.9605385259692153,
+      "c16_over_c8_p95": 2.6095058048794706
+    },
+    {
+      "name": "student",
+      "c16_over_c8_median_makespan": 0.9853808513364563,
+      "c16_time_reduction_percent": 1.4619148663543746,
+      "paired_ratios": [
+        0.980370534590129,
+        1.009748375946363,
+        0.9920724023532299
+      ],
+      "paired_ratio_median": 0.9920724023532299,
+      "c16_over_c8_p95": 2.8046145445061157
+    },
+    {
+      "name": "teacher",
+      "c16_over_c8_median_makespan": 1.0399130593687975,
+      "c16_time_reduction_percent": -3.991305936879752,
+      "paired_ratios": [
+        0.9842405120551322,
+        1.261937004713395,
+        1.1409865128787424
+      ],
+      "paired_ratio_median": 1.1409865128787424,
+      "c16_over_c8_p95": 2.212774705535616
+    }
+  ],
+  "cases": [
+    {
+      "label": "sync-r1-c8",
+      "name": "sync",
+      "C": 8,
+      "repeat": 1,
+      "makespan_s": 4.591069608926773,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748546": 30,
+        "1748545": 30,
+        "1748547": 40
+      },
+      "formal_resource_samples": 4,
+      "responses_sha256": "5540c68729f9ba7c9d1244d67c99988c127b2dcfb2e7e3fc8049f1932a9f3578"
+    },
+    {
+      "label": "sync-r1-c16",
+      "name": "sync",
+      "C": 16,
+      "repeat": 1,
+      "makespan_s": 4.372410340933129,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748545": 32,
+        "1748547": 32,
+        "1748546": 36
+      },
+      "formal_resource_samples": 4,
+      "responses_sha256": "8c90f7edd160a340aca3e78e196449fef6807ef9ce02e0abfa10fa152b67ec9e"
+    },
+    {
+      "label": "sync-r2-c16",
+      "name": "sync",
+      "C": 16,
+      "repeat": 2,
+      "makespan_s": 4.220053666969761,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748544": 24,
+        "1748545": 24,
+        "1748546": 24,
+        "1748547": 28
+      },
+      "formal_resource_samples": 4,
+      "responses_sha256": "337c1a98e200b0fb049ee14c2bca2f05afbdc94c94d0701a216a8f1f6f6cc053"
+    },
+    {
+      "label": "sync-r2-c8",
+      "name": "sync",
+      "C": 8,
+      "repeat": 2,
+      "makespan_s": 4.39342468092218,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748547": 30,
+        "1748545": 32,
+        "1748546": 38
+      },
+      "formal_resource_samples": 4,
+      "responses_sha256": "b1baad524863b48268cbc36ae41e215e0f9e1d1cb5a5d5aa58db6a48aef267b3"
+    },
+    {
+      "label": "sync-r3-c8",
+      "name": "sync",
+      "C": 8,
+      "repeat": 3,
+      "makespan_s": 4.309628309914842,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748547": 31,
+        "1748545": 33,
+        "1748546": 36
+      },
+      "formal_resource_samples": 4,
+      "responses_sha256": "3eb58a006bb853a8a8e39ce14eb1fbfbbeab08e2496e125068f2e8553f616040"
+    },
+    {
+      "label": "sync-r3-c16",
+      "name": "sync",
+      "C": 16,
+      "repeat": 3,
+      "makespan_s": 4.195279284147546,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748547": 33,
+        "1748545": 34,
+        "1748546": 33
+      },
+      "formal_resource_samples": 4,
+      "responses_sha256": "060c60aa696512c9f2da58fba36169ee02588610c7292c7072fed55d400246ea"
+    },
+    {
+      "label": "student-r1-c8",
+      "name": "student",
+      "C": 8,
+      "repeat": 1,
+      "makespan_s": 5.654505132930353,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748547": 36,
+        "1748545": 30,
+        "1748546": 34
+      },
+      "formal_resource_samples": 5,
+      "responses_sha256": "1b8808c9e79d6f90ffdff32cbaf7077cfae2b795d4687a1119eec045956a2ec6"
+    },
+    {
+      "label": "student-r1-c16",
+      "name": "student",
+      "C": 16,
+      "repeat": 1,
+      "makespan_s": 5.543510220013559,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748546": 20,
+        "1748547": 40,
+        "1748545": 20,
+        "1748544": 20
+      },
+      "formal_resource_samples": 5,
+      "responses_sha256": "30538f73f648ad18960183544a9db5bed8f27b405e74fd5511032c693f1e6e6f"
+    },
+    {
+      "label": "student-r2-c16",
+      "name": "student",
+      "C": 16,
+      "repeat": 2,
+      "makespan_s": 5.681292460067198,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748547": 32,
+        "1748546": 35,
+        "1748545": 33
+      },
+      "formal_resource_samples": 5,
+      "responses_sha256": "4522187c9afd48eea053ef1188f7e065dffcd941918e89760a944332731c1938"
+    },
+    {
+      "label": "student-r2-c8",
+      "name": "student",
+      "C": 8,
+      "repeat": 2,
+      "makespan_s": 5.626443770946935,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748547": 36,
+        "1748546": 29,
+        "1748545": 35
+      },
+      "formal_resource_samples": 5,
+      "responses_sha256": "867b3b7c36389db21305f258182e172dc77eb8ae435a96a86c9d8c455662440e"
+    },
+    {
+      "label": "student-r3-c8",
+      "name": "student",
+      "C": 8,
+      "repeat": 3,
+      "makespan_s": 5.588493279181421,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748547": 38,
+        "1748545": 33,
+        "1748546": 29
+      },
+      "formal_resource_samples": 5,
+      "responses_sha256": "dc1d5779b9b01486b72cf94fabefcd0ff3a1e3046ffdf34e19c6a3f8d4e18ce2"
+    },
+    {
+      "label": "student-r3-c16",
+      "name": "student",
+      "C": 16,
+      "repeat": 3,
+      "makespan_s": 5.544189953012392,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748547": 34,
+        "1748545": 20,
+        "1748546": 25,
+        "1748544": 21
+      },
+      "formal_resource_samples": 5,
+      "responses_sha256": "e7f8fad858e4880632c60216fc324ab6252420173825bddc7feac62b3140d26a"
+    },
+    {
+      "label": "teacher-r1-c8",
+      "name": "teacher",
+      "C": 8,
+      "repeat": 1,
+      "makespan_s": 0.8113511099945754,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748545": 39,
+        "1748547": 37,
+        "1748546": 24
+      },
+      "formal_resource_samples": 1,
+      "responses_sha256": "7378f4c6490063055572709ee4366bc8c4699d128b440a7fa5e98e09145de179"
+    },
+    {
+      "label": "teacher-r1-c16",
+      "name": "teacher",
+      "C": 16,
+      "repeat": 1,
+      "makespan_s": 0.7985646319575608,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748545": 19,
+        "1748546": 30,
+        "1748547": 34,
+        "1748544": 17
+      },
+      "formal_resource_samples": 1,
+      "responses_sha256": "4db90b1870a6ab3788527dd44b99ae4c07fde586e55a811af72149f000da39e1"
+    },
+    {
+      "label": "teacher-r2-c16",
+      "name": "teacher",
+      "C": 16,
+      "repeat": 2,
+      "makespan_s": 1.0385684710927308,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748545": 48,
+        "1748547": 52
+      },
+      "formal_resource_samples": 1,
+      "responses_sha256": "aa6da3e872369198e986a3fa555491c738ca56cd09a7995a70aa79227cb158a1"
+    },
+    {
+      "label": "teacher-r2-c8",
+      "name": "teacher",
+      "C": 8,
+      "repeat": 2,
+      "makespan_s": 0.8229954959824681,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748545": 27,
+        "1748546": 35,
+        "1748547": 38
+      },
+      "formal_resource_samples": 1,
+      "responses_sha256": "2862cc1933a0fb1e53f0af3e9b00195d55fc8b78eb8fea0ebbd5d61cb833d1a4"
+    },
+    {
+      "label": "teacher-r3-c8",
+      "name": "teacher",
+      "C": 8,
+      "repeat": 3,
+      "makespan_s": 0.7394781669136137,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748545": 33,
+        "1748547": 32,
+        "1748544": 18,
+        "1748546": 17
+      },
+      "formal_resource_samples": 0,
+      "responses_sha256": "b7d686b0b3badc76589d7e9cd8f0f2ef36aec9ad843691d409cee3e17e1480a4"
+    },
+    {
+      "label": "teacher-r3-c16",
+      "name": "teacher",
+      "C": 16,
+      "repeat": 3,
+      "makespan_s": 0.8437346150167286,
+      "successful": 100,
+      "failed": 0,
+      "per_worker_http200": {
+        "1748545": 34,
+        "1748547": 36,
+        "1748546": 30
+      },
+      "formal_resource_samples": 0,
+      "responses_sha256": "91939232ae6925a106a55aa5c40ed413a69bb179b0aa43bdb5b26c75470c4a41"
+    }
+  ],
+  "stage_gpu_peak_mib": 6449.0,
+  "stage_all_worker_rss_peak_mib": 7939.94140625,
+  "normalized_business_comparison": {
+    "reference": "historical W4 r1 C8 per same sequence; omit TimeStamp/UseTimeMs/FreeCapacity only",
+    "compared": 1800,
+    "difference_count": 0,
+    "differences": []
+  },
+  "cleanup": {
+    "parent_pid": 1748538,
+    "parent_returncode": 0,
+    "worker_pids": [
+      1748544,
+      1748545,
+      1748546,
+      1748547
+    ],
+    "observations": [
+      {
+        "unix": 1795411138.0057886,
+        "gpu": "3 MiB, 79 %",
+        "live_workers": [],
+        "port_closed": true
+      },
+      {
+        "unix": 1795411139.0620127,
+        "gpu": "3 MiB, 0 %",
+        "live_workers": [],
+        "port_closed": true
+      },
+      {
+        "unix": 1795411140.1306782,
+        "gpu": "3 MiB, 0 %",
+        "live_workers": [],
+        "port_closed": true
+      },
+      {
+        "unix": 1795411141.1960316,
+        "gpu": "3 MiB, 0 %",
+        "live_workers": [],
+        "port_closed": true
+      }
+    ],
+    "verified": true
+  },
+  "resource_roles": [
+    "controller",
+    "load_generator",
+    "server_worker",
+    "uvicorn_helper",
+    "uvicorn_parent"
+  ]
+}

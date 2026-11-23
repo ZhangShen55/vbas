@@ -1,0 +1,14 @@
+{
+  "summary_sha256": "2f8e758f804527469bd712e158e39fef125393c1d3cc78f611c4942f787360ff",
+  "independent_local_server_summary_and_csv_byte_identical": true,
+  "raw_files_verified": 417,
+  "groups": 18,
+  "requests": 1800,
+  "failed": 0,
+  "normalized_business_response_differences": 0,
+  "all_4_gpu_workers_started_and_warmup_covered": true,
+  "formal_per_worker_access_counts_independently_recomputed": true,
+  "cleanup_verified": true,
+  "stage_gpu_peak_mib": 6449.0,
+  "scope": "Fixed100, each endpoint separately, three repeats at C8 and C16; no mixed or long stability claim"
+}

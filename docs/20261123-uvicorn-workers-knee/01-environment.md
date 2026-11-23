@@ -8,3 +8,6 @@
 ## 追加：W4并发8与16复核（2026-11-23）
 
 仍为物理GPU1 RTX3090 UUID GPU-8c6b7efd-2b4f-04f3-db71-b50d2482fc49；服务器代码3f77bfd、vbas-trt环境、四FP16 Engine、ImageSize640、b512/q0与原阶段相同，私有副本注册关闭。W4主机预算14GiB；端口18985与GPU锁/空闲保护；不部署、不更改服务代码/环境、不影响其他服务。新执行脚本SHA见本轮plan/provenance。
+
+
+追加执行结束：四worker PID均已退出，阶段GPU峰值6449MiB，指定GPU最终3MiB/0%；源模型/manifest/配置哈希与起点相同，服务器仍3f77bfd且干净。

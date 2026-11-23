@@ -1,0 +1,55 @@
+{
+  "raw": {
+    "directory": "uvicorn-w4-c8-c16-checkpoint-20261123-r1",
+    "result": {
+      "source_unchanged": true,
+      "files": 417,
+      "symlinks": 0,
+      "package": {
+        "bytes": 82860825,
+        "sha256": "df42f6687bfbeca4d382bf93f832cc7ea7eacd5a0e2d1bf90bad5a34b270ce30"
+      },
+      "created_unix": 1795411259.367597
+    },
+    "local_verification": {
+      "package": {
+        "bytes": 82860825,
+        "sha256": "df42f6687bfbeca4d382bf93f832cc7ea7eacd5a0e2d1bf90bad5a34b270ce30"
+      },
+      "all_files": 417,
+      "extracted_verified": true,
+      "verified_unix": 1795411327.1597052
+    }
+  },
+  "artifacts": {
+    "directory": "uvicorn-w4-c8-c16-artifacts-checkpoint-20261123-r1",
+    "result": {
+      "source_unchanged": true,
+      "files": 8,
+      "symlinks": 0,
+      "package": {
+        "bytes": 16283,
+        "sha256": "faacf9d33777ffee58b4fee4bf7870276cace06cf6742348db6f11d4a0fe7889"
+      },
+      "created_unix": 1795411358.762541
+    },
+    "local_verification": {
+      "package": {
+        "bytes": 16283,
+        "sha256": "faacf9d33777ffee58b4fee4bf7870276cace06cf6742348db6f11d4a0fe7889"
+      },
+      "all_files": 8,
+      "extracted_verified": true,
+      "verified_unix": 1795411376.040663
+    },
+    "remote_verification": {
+      "package": {
+        "bytes": 16283,
+        "sha256": "faacf9d33777ffee58b4fee4bf7870276cace06cf6742348db6f11d4a0fe7889"
+      },
+      "all_files": 8,
+      "extracted_verified": true,
+      "verified_unix": 1795411420.8283343
+    }
+  }
+}
