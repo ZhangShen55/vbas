@@ -204,3 +204,6 @@ Docker 镜像中 `LABEL authors="SeaCraft"`。具体开源协议以仓库内授�
 ---
 
 如有接口字段或 IAS 协议变更，请以 `schemas/` 与 `services/` 中的实现为准。
+
+
+`/AE/SyncTasks2`现已在同一ROI内通过线程并发提交人数、人脸模型，结果全部收齐后返回；多ROI仍按顺序处理，阈值/NMS/响应不变。[改造验证与适用限制](docs/20261123-sync-model-parallel/reports/20261123-parallel-validation/report.md)。此前串行版本的容量/路数报告保留为历史参考。

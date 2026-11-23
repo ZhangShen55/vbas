@@ -1,0 +1,27 @@
+{
+  "cpu_tests_each_host": 57,
+  "gpu_requests": 900,
+  "failed": 0,
+  "normalized_business_differences": 0,
+  "independent_local_server_byte_identical": true,
+  "summary_sha256": "eb613665b190f0d77e9409fc12815c5619d8bbd10aa6279fda93114b4205648b",
+  "raw_package": {
+    "source_unchanged": true,
+    "files": 170,
+    "symlinks": 0,
+    "package": {
+      "bytes": 32155133,
+      "sha256": "7b76f2603093b2077605fc322a357bfa1b38813264baf5f34e939e2e2695f811"
+    },
+    "created_unix": 1795424663.768141
+  },
+  "local_verification": {
+    "package": {
+      "bytes": 32155133,
+      "sha256": "7b76f2603093b2077605fc322a357bfa1b38813264baf5f34e939e2e2695f811"
+    },
+    "all_files": 170,
+    "extracted_verified": true,
+    "verified_unix": 1795424711.8404531
+  }
+}
