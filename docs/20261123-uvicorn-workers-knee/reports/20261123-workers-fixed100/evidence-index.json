@@ -1,0 +1,60 @@
+{
+  "raw": {
+    "directory": "uvicorn-workers-fixed100-checkpoint-20261123-r1",
+    "package-result.json": {
+      "source_unchanged": true,
+      "files": 2160,
+      "symlinks": 0,
+      "package": {
+        "bytes": 329274584,
+        "sha256": "e3cce039fbcbe45392d81f821a0643bfe4a649297c0ffaa2225014046aee703f"
+      },
+      "created_unix": 1795405564.185195
+    },
+    "local-verification.json": {
+      "package": {
+        "bytes": 329274584,
+        "sha256": "e3cce039fbcbe45392d81f821a0643bfe4a649297c0ffaa2225014046aee703f"
+      },
+      "all_files": 2160,
+      "extracted_verified": true,
+      "verified_unix": 1795405724.679957
+    },
+    "checksums_json_sha256": "10444d2644a3c6f73aa0724a31b1f7d60d492a3e33fabb1c612fa2ed79cb28e3"
+  },
+  "artifacts": {
+    "directory": "uvicorn-workers-artifacts-checkpoint-20261123-r1",
+    "package-result.json": {
+      "source_unchanged": true,
+      "files": 22,
+      "symlinks": 0,
+      "package": {
+        "bytes": 736515,
+        "sha256": "62861111a4d693a5554f91e59a8be23947c29476c9917b048c79755dfc335e84"
+      },
+      "created_unix": 1795406217.359605
+    },
+    "local-verification.json": {
+      "package": {
+        "bytes": 736515,
+        "sha256": "62861111a4d693a5554f91e59a8be23947c29476c9917b048c79755dfc335e84"
+      },
+      "all_files": 22,
+      "extracted_verified": true,
+      "verified_unix": 1795406225.671263
+    },
+    "remote-verification.json": {
+      "package": {
+        "bytes": 736515,
+        "sha256": "62861111a4d693a5554f91e59a8be23947c29476c9917b048c79755dfc335e84"
+      },
+      "all_files": 22,
+      "extracted_verified": true,
+      "uploaded_local_extraction_also_verified": true,
+      "verified_unix": 1795406378.6407616
+    },
+    "checksums_json_sha256": "c63119fdb69bafa11ce91acf7c0431feb2e53bbd3f5ec267665ed2895ba4daad"
+  },
+  "final_summary_sha256": "e82df6a95a1f71fc32cfa9e0b4bd0d8fd97c58d32abbe0af7270cd3bd6bc5d1d",
+  "server_service_commit": "3f77bfdcb197fd7bb957e45104342389ed3daca7"
+}

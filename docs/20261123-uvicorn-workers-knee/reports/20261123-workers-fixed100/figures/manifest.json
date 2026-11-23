@@ -1,0 +1,37 @@
+{
+  "summary_sha256": "e82df6a95a1f71fc32cfa9e0b4bd0d8fd97c58d32abbe0af7270cd3bd6bc5d1d",
+  "script_sha256": "1775f2ba82dcc1212373c9f3d5d281abe029538c69fc31dc217a2cec43e00f3d",
+  "matplotlib": "3.9.4",
+  "files": [
+    {
+      "file": "makespan.png",
+      "bytes": 185868,
+      "sha256": "61c126394ceee28dbdf614ed8d5a008c15fbb818b4b7aad596752cfbaf9e5ac2"
+    },
+    {
+      "file": "makespan.svg",
+      "bytes": 137139,
+      "sha256": "e0f25ed59171f6f05db87e8f1ca0994e92600e43de0d5158eeabe6b93c8d45b1"
+    },
+    {
+      "file": "throughput.png",
+      "bytes": 188946,
+      "sha256": "c7082bd873890b0f059f4d9a9d09c966e6b36d6fa38763b7b9677b491102ca72"
+    },
+    {
+      "file": "throughput.svg",
+      "bytes": 89320,
+      "sha256": "ec2f038f4c4b0a736ec0438ebdb8683da0621d8b5b11fd13b9171e0aec780f21"
+    },
+    {
+      "file": "p95.png",
+      "bytes": 210555,
+      "sha256": "9294ba13b26165736ccc5d28427db85708260fba894327fd136fe96dbdf0c152"
+    },
+    {
+      "file": "p95.svg",
+      "bytes": 95312,
+      "sha256": "e4bbb59ce419c87adf86faed9f2f4f29a23021823d29f451a5b0d3dc8862a782"
+    }
+  ]
+}

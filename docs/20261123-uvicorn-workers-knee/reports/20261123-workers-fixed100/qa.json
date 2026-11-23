@@ -1,0 +1,31 @@
+{
+  "verified_unix": 1795406204.4654799,
+  "summary_sha256": "e82df6a95a1f71fc32cfa9e0b4bd0d8fd97c58d32abbe0af7270cd3bd6bc5d1d",
+  "metrics_sha256": "bc434dd472e8fc2a0b52345096c7035de5b628a5a9c107befdaf249b765c4323",
+  "analyzer_sha256": "10b611445e72c2fb8208ae5cc7f6c3d54fc8eea3691bf3cb7f65ce21dfb823e5",
+  "new_groups": 216,
+  "new_requests": 21600,
+  "new_failed": 0,
+  "with_reused_w1_groups": 288,
+  "with_reused_w1_requests": 28800,
+  "raw_package_files_verified": 2160,
+  "local_server_summary_and_csv_byte_identical": true,
+  "portable_arithmetic_note": "首次Python3.11/3.12归集在发生器CPU比例出现1 ULP差异；保留旧归集；改math.fsum后独立新目录重算，主耗时/计数/延迟/推荐未变。",
+  "raw_reanalysis": "逐响应序号/图片ID/业务成功/耗时/分位数、同输入/模型/配置SHA、全部worker预热及正式访问计数与服务日志独立重算通过。",
+  "charts": {
+    "png_count": 3,
+    "svg_count": 3,
+    "svg_xml_parsed": true,
+    "source_values_positive_and_C_grid_valid": true,
+    "visual_review": "三张PNG均已逐张查看，三面板/四线/刻度/图例完整无裁剪；耗时显示三轮min/max；星号为最快耗时点，P95图不表示该点P95最小。"
+  },
+  "final_audit": {
+    "time_unix": 1795406166.399374,
+    "historical_pids_live": {},
+    "port18985_closed": true,
+    "gpu": "GPU-8c6b7efd-2b4f-04f3-db71-b50d2482fc49, NVIDIA GeForce RTX 3090, 3 MiB, 0 %",
+    "task_processes": [],
+    "server_commit": "3f77bfdcb197fd7bb957e45104342389ed3daca7",
+    "server_git_status": ""
+  }
+}
