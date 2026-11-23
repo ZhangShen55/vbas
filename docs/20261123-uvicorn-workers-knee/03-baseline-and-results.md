@@ -9,3 +9,8 @@ W2-r1为预热覆盖保护停止，无正式组，保留不覆盖；正式计划
 
 
 正式结果：W2/4/6各-r2均72组7200成功、合计216组21600成功0失败。完整原始包uvicorn-workers-fixed100-checkpoint-20261123-r1含2160文件、329274584字节，SHA256 e3cce039fbcbe45392d81f821a0643bfe4a649297c0ffaa2225014046aee703f；源前后不变、本机整包/成员/解包校验通过。最终采用uvicorn-workers-analysis-local-20261123-r3，summary SHA e82df6a95a1f71fc32cfa9e0b4bd0d8fd97c58d32abbe0af7270cd3bd6bc5d1d，与服务器portable-r2的summary和CSV逐字节一致；第一次CPU比例1 ULP跨Python版本差异保留，math.fsum修正仅用于新派生目录，不改原始记录。派生22文件包uvicorn-workers-artifacts-checkpoint-20261123-r1为736515字节，SHA256 62861111a4d693a5554f91e59a8be23947c29476c9917b048c79755dfc335e84。完整报告记录旧W1包与Engine交接包，保留全部历史结果。
+
+
+## 追加：W4并发8与16复核（2026-11-23）
+
+原W4-r2 C8/C16三轮作为历史参照不覆盖；本轮C8也重新执行，以本轮18组为直接对照，不将旧C8与新C16混合成配对。输入仍原每接口100张，完整响应/逐PID分配/资源/运行OpenAPI/脚本/环境/配置及Engine哈希独立留存。最终完整整包源前后不变、本机整包/成员/解包核验，日志和图片/完整私有配置不入Git。
