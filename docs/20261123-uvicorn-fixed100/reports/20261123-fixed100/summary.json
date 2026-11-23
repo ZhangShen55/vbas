@@ -1,0 +1,2999 @@
+{
+  "code": "3f77bfdcb197fd7bb957e45104342389ed3daca7",
+  "run_id": "uvicorn-fixed100-20261123-r1",
+  "script_sha256": "15b5ef9eabd5b4a013b1049e9fc743cf0bf3187b1626e5170a7142ad88c7590d",
+  "plan_sha256": "6a63ce11e24daef5e732487d39b15e20cf833d86067a5958d54de7867ced2d43",
+  "cases": [
+    {
+      "name": "sync",
+      "C": 1,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.884962774813175,
+      "all_100_successful": true,
+      "successful_images_per_s": 14.524406779049508,
+      "started_unix": 1795400730.2641852,
+      "ended_unix": 1795400737.149148,
+      "latency_ms": {
+        "p50": 69.01095900684595,
+        "p95": 71.75200926139951,
+        "p99": 72.59995547821747
+      },
+      "generator_measurement_cpu_seconds": 0.48764276900000003,
+      "generator_cpu_one_core_100": 7.082721939818075,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 1,
+        "repeat": 1,
+        "label": "sync-r1-c1"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 2,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.8232992209959775,
+      "all_100_successful": true,
+      "successful_images_per_s": 14.655666820574123,
+      "started_unix": 1795400739.4849272,
+      "ended_unix": 1795400746.3082263,
+      "latency_ms": {
+        "p50": 136.19401457253844,
+        "p95": 141.60489218775183,
+        "p99": 144.40636923303833
+      },
+      "generator_measurement_cpu_seconds": 0.4639978619999999,
+      "generator_cpu_one_core_100": 6.80019807093073,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 2,
+        "repeat": 1,
+        "label": "sync-r1-c2"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 4,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.470266333082691,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.45531433361508,
+      "started_unix": 1795400748.6450794,
+      "ended_unix": 1795400755.1153457,
+      "latency_ms": {
+        "p50": 258.3441809983924,
+        "p95": 265.3684965916909,
+        "p99": 288.0525400489569
+      },
+      "generator_measurement_cpu_seconds": 0.501554105,
+      "generator_cpu_one_core_100": 7.751676348089982,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 4,
+        "repeat": 1,
+        "label": "sync-r1-c4"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 8,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.479341101134196,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.43366809049383,
+      "started_unix": 1795400757.4714956,
+      "ended_unix": 1795400763.9508367,
+      "latency_ms": {
+        "p50": 516.8360765092075,
+        "p95": 555.5673255701549,
+        "p99": 562.8399090678431
+      },
+      "generator_measurement_cpu_seconds": 0.518456197,
+      "generator_cpu_one_core_100": 8.001680863957683,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 8,
+        "repeat": 1,
+        "label": "sync-r1-c8"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 16,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.556877891998738,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.251160940792955,
+      "started_unix": 1795400766.2863762,
+      "ended_unix": 1795400772.843254,
+      "latency_ms": {
+        "p50": 1049.6754070045426,
+        "p95": 1114.9806653149426,
+        "p99": 1136.33015508065
+      },
+      "generator_measurement_cpu_seconds": 0.5244771859999999,
+      "generator_cpu_one_core_100": 7.9988859734602,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 16,
+        "repeat": 1,
+        "label": "sync-r1-c16"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 32,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.5726947819348425,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.214459718234842,
+      "started_unix": 1795400775.1594555,
+      "ended_unix": 1795400781.7321503,
+      "latency_ms": {
+        "p50": 2090.8425034722313,
+        "p95": 2252.894416707568,
+        "p99": 2293.566822828725
+      },
+      "generator_measurement_cpu_seconds": 0.582697742,
+      "generator_cpu_one_core_100": 8.8654313235654,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 32,
+        "repeat": 1,
+        "label": "sync-r1-c32"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 50,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.641062413109466,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.057831681057516,
+      "started_unix": 1795400784.0927577,
+      "ended_unix": 1795400790.7338202,
+      "latency_ms": {
+        "p50": 3213.6044970247895,
+        "p95": 3462.4584501609206,
+        "p99": 3511.376288230531
+      },
+      "generator_measurement_cpu_seconds": 0.62864374,
+      "generator_cpu_one_core_100": 9.466011624270484,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 50,
+        "repeat": 1,
+        "label": "sync-r1-c50"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 100,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.9655431841965765,
+      "all_100_successful": true,
+      "successful_images_per_s": 14.35638217373772,
+      "started_unix": 1795400793.0684366,
+      "ended_unix": 1795400800.03398,
+      "latency_ms": {
+        "p50": 6681.631649960764,
+        "p95": 6831.833842478227,
+        "p99": 6874.817930597346
+      },
+      "generator_measurement_cpu_seconds": 0.5751777469999999,
+      "generator_cpu_one_core_100": 8.257471553761423,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 100,
+        "repeat": 1,
+        "label": "sync-r1-c100"
+      },
+      "formal_resource_samples": 7,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 100,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 7.150111696217209,
+      "all_100_successful": true,
+      "successful_images_per_s": 13.985795502034652,
+      "started_unix": 1795400802.4070146,
+      "ended_unix": 1795400809.5571263,
+      "latency_ms": {
+        "p50": 6881.836551590823,
+        "p95": 6981.131771206856,
+        "p99": 7043.857088591903
+      },
+      "generator_measurement_cpu_seconds": 0.590840518,
+      "generator_cpu_one_core_100": 8.263374659064224,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 100,
+        "repeat": 2,
+        "label": "sync-r2-c100"
+      },
+      "formal_resource_samples": 7,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 50,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.653923023957759,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.028728111212791,
+      "started_unix": 1795400811.8967175,
+      "ended_unix": 1795400818.5506406,
+      "latency_ms": {
+        "p50": 3212.6254804898053,
+        "p95": 3506.6869050147943,
+        "p99": 3558.993251242209
+      },
+      "generator_measurement_cpu_seconds": 0.8020970569999999,
+      "generator_cpu_one_core_100": 12.054498588456946,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 50,
+        "repeat": 2,
+        "label": "sync-r2-c50"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 32,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.602096945978701,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.146702754934463,
+      "started_unix": 1795400820.8893218,
+      "ended_unix": 1795400827.4914188,
+      "latency_ms": {
+        "p50": 2161.309483461082,
+        "p95": 2259.751310304273,
+        "p99": 2294.959948419128
+      },
+      "generator_measurement_cpu_seconds": 0.6437929149999999,
+      "generator_cpu_one_core_100": 9.751339919237788,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 32,
+        "repeat": 2,
+        "label": "sync-r2-c32"
+      },
+      "formal_resource_samples": 7,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 16,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.590695583960041,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.172905306592035,
+      "started_unix": 1795400829.826602,
+      "ended_unix": 1795400836.4172976,
+      "latency_ms": {
+        "p50": 1078.4347020089626,
+        "p95": 1127.575962501578,
+        "p99": 1142.7579951286316
+      },
+      "generator_measurement_cpu_seconds": 0.552023923,
+      "generator_cpu_one_core_100": 8.375806710652453,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 16,
+        "repeat": 2,
+        "label": "sync-r2-c16"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 8,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.498005399014801,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.389337782815872,
+      "started_unix": 1795400838.7713296,
+      "ended_unix": 1795400845.269335,
+      "latency_ms": {
+        "p50": 517.3507194267586,
+        "p95": 559.8951047286391,
+        "p99": 565.326916736085
+      },
+      "generator_measurement_cpu_seconds": 0.5194661589999999,
+      "generator_cpu_one_core_100": 7.994240187592936,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 8,
+        "repeat": 2,
+        "label": "sync-r2-c8"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 4,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.483019843930379,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.424910366983276,
+      "started_unix": 1795400847.631219,
+      "ended_unix": 1795400854.1142387,
+      "latency_ms": {
+        "p50": 258.02301545627415,
+        "p95": 270.9670608746819,
+        "p99": 304.0202499483712
+      },
+      "generator_measurement_cpu_seconds": 0.458607311,
+      "generator_cpu_one_core_100": 7.073976665818224,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 4,
+        "repeat": 2,
+        "label": "sync-r2-c4"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 2,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.8817702669184655,
+      "all_100_successful": true,
+      "successful_images_per_s": 14.531144766734306,
+      "started_unix": 1795400856.4798882,
+      "ended_unix": 1795400863.3616586,
+      "latency_ms": {
+        "p50": 137.02367106452584,
+        "p95": 144.90253729745746,
+        "p99": 153.12919745687398
+      },
+      "generator_measurement_cpu_seconds": 0.44425730700000005,
+      "generator_cpu_one_core_100": 6.455567241696526,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 2,
+        "repeat": 2,
+        "label": "sync-r2-c2"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 1,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.950601198943332,
+      "all_100_successful": true,
+      "successful_images_per_s": 14.387244662404534,
+      "started_unix": 1795400865.729676,
+      "ended_unix": 1795400872.680277,
+      "latency_ms": {
+        "p50": 69.68249997589737,
+        "p95": 72.27018217090517,
+        "p99": 73.56962762307379
+      },
+      "generator_measurement_cpu_seconds": 0.49546653399999996,
+      "generator_cpu_one_core_100": 7.128398246691574,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 1,
+        "repeat": 2,
+        "label": "sync-r2-c1"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 2,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.90334414690733,
+      "all_100_successful": true,
+      "successful_images_per_s": 14.485732982731218,
+      "started_unix": 1795400875.0364323,
+      "ended_unix": 1795400881.9397764,
+      "latency_ms": {
+        "p50": 137.87149055860937,
+        "p95": 144.47337343590334,
+        "p99": 148.51523634977642
+      },
+      "generator_measurement_cpu_seconds": 0.466352185,
+      "generator_cpu_one_core_100": 6.75545322782327,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 2,
+        "repeat": 3,
+        "label": "sync-r3-c2"
+      },
+      "formal_resource_samples": 7,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 50,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.716611701063812,
+      "all_100_successful": true,
+      "successful_images_per_s": 14.888459308160018,
+      "started_unix": 1795400884.290612,
+      "ended_unix": 1795400891.0072236,
+      "latency_ms": {
+        "p50": 3248.2817210257053,
+        "p95": 3511.8641215958633,
+        "p99": 3540.892680864781
+      },
+      "generator_measurement_cpu_seconds": 0.7366285920000001,
+      "generator_cpu_one_core_100": 10.96726481721921,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 50,
+        "repeat": 3,
+        "label": "sync-r3-c50"
+      },
+      "formal_resource_samples": 7,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 1,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.914343304000795,
+      "all_100_successful": true,
+      "successful_images_per_s": 14.462689456298438,
+      "started_unix": 1795400893.4127326,
+      "ended_unix": 1795400900.327076,
+      "latency_ms": {
+        "p50": 69.17325453832746,
+        "p95": 72.17656773282215,
+        "p99": 73.96637614816431
+      },
+      "generator_measurement_cpu_seconds": 0.49287513000000005,
+      "generator_cpu_one_core_100": 7.1282999459227225,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 1,
+        "repeat": 3,
+        "label": "sync-r3-c1"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 8,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.497579482849687,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.390346553504925,
+      "started_unix": 1795400902.6856518,
+      "ended_unix": 1795400909.1832314,
+      "latency_ms": {
+        "p50": 519.05614847783,
+        "p95": 552.7323334361427,
+        "p99": 554.7401761775836
+      },
+      "generator_measurement_cpu_seconds": 0.5047756560000001,
+      "generator_cpu_one_core_100": 7.768672277612788,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 8,
+        "repeat": 3,
+        "label": "sync-r3-c8"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 4,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.487727273022756,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.413718208504177,
+      "started_unix": 1795400911.5528052,
+      "ended_unix": 1795400918.0405324,
+      "latency_ms": {
+        "p50": 258.5511790821329,
+        "p95": 264.503750926815,
+        "p99": 291.34575017727917
+      },
+      "generator_measurement_cpu_seconds": 0.497386678,
+      "generator_cpu_one_core_100": 7.666578095356004,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 4,
+        "repeat": 3,
+        "label": "sync-r3-c4"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 100,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 7.1792790710460395,
+      "all_100_successful": true,
+      "successful_images_per_s": 13.92897518126841,
+      "started_unix": 1795400920.421187,
+      "ended_unix": 1795400927.600466,
+      "latency_ms": {
+        "p50": 6896.045389585197,
+        "p95": 6993.509812536649,
+        "p99": 7089.664810842369
+      },
+      "generator_measurement_cpu_seconds": 0.5717322920000001,
+      "generator_cpu_one_core_100": 7.963644905597704,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 100,
+        "repeat": 3,
+        "label": "sync-r3-c100"
+      },
+      "formal_resource_samples": 7,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 32,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.615215369965881,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.116665808647099,
+      "started_unix": 1795400929.993946,
+      "ended_unix": 1795400936.6091614,
+      "latency_ms": {
+        "p50": 2088.156772428192,
+        "p95": 2223.989811516367,
+        "p99": 2269.8844026750885
+      },
+      "generator_measurement_cpu_seconds": 0.541145401,
+      "generator_cpu_one_core_100": 8.180314180803324,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 32,
+        "repeat": 3,
+        "label": "sync-r3-c32"
+      },
+      "formal_resource_samples": 7,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 16,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.590704133035615,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.172885625187511,
+      "started_unix": 1795400939.020398,
+      "ended_unix": 1795400945.611102,
+      "latency_ms": {
+        "p50": 1055.5552720325068,
+        "p95": 1116.8170079705305,
+        "p99": 1134.3382199574262
+      },
+      "generator_measurement_cpu_seconds": 0.511425216,
+      "generator_cpu_one_core_100": 7.759796308204818,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "sync",
+        "C": 16,
+        "repeat": 3,
+        "label": "sync-r3-c16"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 1,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 7.590177105972543,
+      "all_100_successful": true,
+      "successful_images_per_s": 13.174923141294318,
+      "started_unix": 1795400978.043686,
+      "ended_unix": 1795400985.633863,
+      "latency_ms": {
+        "p50": 76.07519451994449,
+        "p95": 78.63503937842324,
+        "p99": 79.6217195922509
+      },
+      "generator_measurement_cpu_seconds": 0.497795684,
+      "generator_cpu_one_core_100": 6.558419876768035,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 1,
+        "repeat": 1,
+        "label": "student-r1-c1"
+      },
+      "formal_resource_samples": 7,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 2,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 5.93464187392965,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.85021642827195,
+      "started_unix": 1795400988.044771,
+      "ended_unix": 1795400993.9794128,
+      "latency_ms": {
+        "p50": 118.03322553168982,
+        "p95": 120.82660207524896,
+        "p99": 124.77084138197837
+      },
+      "generator_measurement_cpu_seconds": 0.564396213,
+      "generator_cpu_one_core_100": 9.510198340347072,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 2,
+        "repeat": 1,
+        "label": "student-r1-c2"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 4,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.004382747923955,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.654501253201335,
+      "started_unix": 1795400996.3833897,
+      "ended_unix": 1795401002.3877726,
+      "latency_ms": {
+        "p50": 237.59759846143425,
+        "p95": 245.87390390224755,
+        "p99": 249.67113086953773
+      },
+      "generator_measurement_cpu_seconds": 0.5956566539999999,
+      "generator_cpu_one_core_100": 9.920364490520713,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 4,
+        "repeat": 1,
+        "label": "student-r1-c4"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 8,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.084843550110236,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.434276276205715,
+      "started_unix": 1795401004.7783756,
+      "ended_unix": 1795401010.8632193,
+      "latency_ms": {
+        "p50": 478.78137102816254,
+        "p95": 490.5221580527722,
+        "p99": 506.89382574055355
+      },
+      "generator_measurement_cpu_seconds": 0.5332007029999999,
+      "generator_cpu_one_core_100": 8.762767663769107,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 8,
+        "repeat": 1,
+        "label": "student-r1-c8"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 16,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.075245346873999,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.46024058130504,
+      "started_unix": 1795401013.2707455,
+      "ended_unix": 1795401019.345991,
+      "latency_ms": {
+        "p50": 957.3330794228241,
+        "p95": 965.8392648911104,
+        "p99": 969.6906896773728
+      },
+      "generator_measurement_cpu_seconds": 0.646219909,
+      "generator_cpu_one_core_100": 10.63693517056905,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 16,
+        "repeat": 1,
+        "label": "student-r1-c16"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 32,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.153137221932411,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.25187223901935,
+      "started_unix": 1795401021.7682679,
+      "ended_unix": 1795401027.921405,
+      "latency_ms": {
+        "p50": 1909.0876840054989,
+        "p95": 1927.6321267010644,
+        "p99": 1946.4459274918775
+      },
+      "generator_measurement_cpu_seconds": 0.6389298619999999,
+      "generator_cpu_one_core_100": 10.383806486918262,
+      "generator_lifetime_peak_rss_kib": 146560,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 32,
+        "repeat": 1,
+        "label": "student-r1-c32"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 50,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.20256499806419,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.122362285797863,
+      "started_unix": 1795401030.3362124,
+      "ended_unix": 1795401036.5387774,
+      "latency_ms": {
+        "p50": 2749.600081006065,
+        "p95": 2994.625549239572,
+        "p99": 3005.085896486417
+      },
+      "generator_measurement_cpu_seconds": 0.620702288,
+      "generator_cpu_one_core_100": 10.007187158759645,
+      "generator_lifetime_peak_rss_kib": 146944,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 50,
+        "repeat": 1,
+        "label": "student-r1-c50"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 100,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.379506468074396,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.67519376309751,
+      "started_unix": 1795401038.9456875,
+      "ended_unix": 1795401045.325194,
+      "latency_ms": {
+        "p50": 3329.9118749564514,
+        "p95": 5771.036443917546,
+        "p99": 5986.684075705707
+      },
+      "generator_measurement_cpu_seconds": 0.731835956,
+      "generator_cpu_one_core_100": 11.471670413101704,
+      "generator_lifetime_peak_rss_kib": 147240,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 100,
+        "repeat": 1,
+        "label": "student-r1-c100"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 100,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.464945768006146,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.468033853413283,
+      "started_unix": 1795401047.7723234,
+      "ended_unix": 1795401054.2372692,
+      "latency_ms": {
+        "p50": 3404.236947419122,
+        "p95": 5857.6517116394825,
+        "p99": 6076.588954336476
+      },
+      "generator_measurement_cpu_seconds": 0.744254494,
+      "generator_cpu_one_core_100": 11.512153708746972,
+      "generator_lifetime_peak_rss_kib": 147768,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 100,
+        "repeat": 2,
+        "label": "student-r2-c100"
+      },
+      "formal_resource_samples": 7,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 50,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.242126470897347,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.020181658643057,
+      "started_unix": 1795401056.6838813,
+      "ended_unix": 1795401062.9260077,
+      "latency_ms": {
+        "p50": 2771.743042510934,
+        "p95": 3002.172501408495,
+        "p99": 3028.813168590423
+      },
+      "generator_measurement_cpu_seconds": 0.615401725,
+      "generator_cpu_one_core_100": 9.8588474275423,
+      "generator_lifetime_peak_rss_kib": 148296,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 50,
+        "repeat": 2,
+        "label": "student-r2-c50"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 32,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.183076112996787,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.17317952625565,
+      "started_unix": 1795401065.3597665,
+      "ended_unix": 1795401071.5428426,
+      "latency_ms": {
+        "p50": 1904.1206595720723,
+        "p95": 1920.6291449605487,
+        "p99": 1982.2733525466176
+      },
+      "generator_measurement_cpu_seconds": 0.624370259,
+      "generator_cpu_one_core_100": 10.098052289661737,
+      "generator_lifetime_peak_rss_kib": 148560,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 32,
+        "repeat": 2,
+        "label": "student-r2-c32"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 16,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.054193895077333,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.5174756099751,
+      "started_unix": 1795401073.971231,
+      "ended_unix": 1795401080.025425,
+      "latency_ms": {
+        "p50": 952.4782318621874,
+        "p95": 961.8767937179655,
+        "p99": 964.2196749756115
+      },
+      "generator_measurement_cpu_seconds": 0.611026536,
+      "generator_cpu_one_core_100": 10.092615905427573,
+      "generator_lifetime_peak_rss_kib": 149028,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 16,
+        "repeat": 2,
+        "label": "student-r2-c16"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 8,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.020362282171845,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.61029607738573,
+      "started_unix": 1795401082.4513364,
+      "ended_unix": 1795401088.4716988,
+      "latency_ms": {
+        "p50": 476.73707094509155,
+        "p95": 483.46570066642016,
+        "p99": 487.0377463730985
+      },
+      "generator_measurement_cpu_seconds": 0.6211474539999999,
+      "generator_cpu_one_core_100": 10.317443118654332,
+      "generator_lifetime_peak_rss_kib": 149552,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 8,
+        "repeat": 2,
+        "label": "student-r2-c8"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 4,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 5.97241969499737,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.743632414808722,
+      "started_unix": 1795401090.9213905,
+      "ended_unix": 1795401096.8938103,
+      "latency_ms": {
+        "p50": 236.7415555054322,
+        "p95": 241.00285881431773,
+        "p99": 242.76542782783523
+      },
+      "generator_measurement_cpu_seconds": 0.554513917,
+      "generator_cpu_one_core_100": 9.284577195143754,
+      "generator_lifetime_peak_rss_kib": 150076,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 4,
+        "repeat": 2,
+        "label": "student-r2-c4"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 2,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 5.9794510011561215,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.723943382204336,
+      "started_unix": 1795401099.357287,
+      "ended_unix": 1795401105.3367379,
+      "latency_ms": {
+        "p50": 118.87442844454199,
+        "p95": 122.90817608591169,
+        "p99": 125.5565674114042
+      },
+      "generator_measurement_cpu_seconds": 0.599904923,
+      "generator_cpu_one_core_100": 10.03277596695765,
+      "generator_lifetime_peak_rss_kib": 150564,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 2,
+        "repeat": 2,
+        "label": "student-r2-c2"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 1,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 7.589658169075847,
+      "all_100_successful": true,
+      "successful_images_per_s": 13.175823966282328,
+      "started_unix": 1795401107.783307,
+      "ended_unix": 1795401115.3729653,
+      "latency_ms": {
+        "p50": 76.13170344848186,
+        "p95": 78.5317609203048,
+        "p99": 78.94463472999635
+      },
+      "generator_measurement_cpu_seconds": 0.492713957,
+      "generator_cpu_one_core_100": 6.491912363162402,
+      "generator_lifetime_peak_rss_kib": 150872,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 1,
+        "repeat": 2,
+        "label": "student-r2-c1"
+      },
+      "formal_resource_samples": 7,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 2,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 5.9639094159938395,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.76752496136559,
+      "started_unix": 1795401117.8388102,
+      "ended_unix": 1795401123.8027196,
+      "latency_ms": {
+        "p50": 118.42010647524148,
+        "p95": 122.0749969012104,
+        "p99": 123.50292127579462
+      },
+      "generator_measurement_cpu_seconds": 0.583997279,
+      "generator_cpu_one_core_100": 9.792188953002086,
+      "generator_lifetime_peak_rss_kib": 151336,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 2,
+        "repeat": 3,
+        "label": "student-r3-c2"
+      },
+      "formal_resource_samples": 5,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 50,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.3493140649516135,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.749732802162477,
+      "started_unix": 1795401126.2630715,
+      "ended_unix": 1795401132.6123855,
+      "latency_ms": {
+        "p50": 2827.823950559832,
+        "p95": 3000.442182889674,
+        "p99": 3174.650104104076
+      },
+      "generator_measurement_cpu_seconds": 0.61988905,
+      "generator_cpu_one_core_100": 9.763086904486336,
+      "generator_lifetime_peak_rss_kib": 151864,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 50,
+        "repeat": 3,
+        "label": "student-r3-c50"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 1,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 7.611613347195089,
+      "all_100_successful": true,
+      "successful_images_per_s": 13.137819203185146,
+      "started_unix": 1795401135.0569263,
+      "ended_unix": 1795401142.6685395,
+      "latency_ms": {
+        "p50": 75.99988742731512,
+        "p95": 79.34856960782781,
+        "p99": 79.93858305970211
+      },
+      "generator_measurement_cpu_seconds": 0.498858959,
+      "generator_cpu_one_core_100": 6.55391881123115,
+      "generator_lifetime_peak_rss_kib": 151864,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 1,
+        "repeat": 3,
+        "label": "student-r3-c1"
+      },
+      "formal_resource_samples": 7,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 8,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 5.978559284005314,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.726437800413574,
+      "started_unix": 1795401145.101099,
+      "ended_unix": 1795401151.0796583,
+      "latency_ms": {
+        "p50": 472.71853196434677,
+        "p95": 481.13483717897907,
+        "p99": 483.14621239202114
+      },
+      "generator_measurement_cpu_seconds": 0.597339588,
+      "generator_cpu_one_core_100": 9.991363464406671,
+      "generator_lifetime_peak_rss_kib": 151864,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 8,
+        "repeat": 3,
+        "label": "student-r3-c8"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 4,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 5.966807464836165,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.7593810575126,
+      "started_unix": 1795401153.5538337,
+      "ended_unix": 1795401159.520641,
+      "latency_ms": {
+        "p50": 236.20140342973173,
+        "p95": 240.93728986335918,
+        "p99": 242.87248355802166
+      },
+      "generator_measurement_cpu_seconds": 0.600343815,
+      "generator_cpu_one_core_100": 10.061390761105848,
+      "generator_lifetime_peak_rss_kib": 179588,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 4,
+        "repeat": 3,
+        "label": "student-r3-c4"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 100,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.368147094035521,
+      "all_100_successful": true,
+      "successful_images_per_s": 15.703154861743243,
+      "started_unix": 1795401162.0117366,
+      "ended_unix": 1795401168.3798838,
+      "latency_ms": {
+        "p50": 3310.334299108945,
+        "p95": 5751.589652127586,
+        "p99": 5978.5653625265695
+      },
+      "generator_measurement_cpu_seconds": 0.729536022,
+      "generator_cpu_one_core_100": 11.456017130686126,
+      "generator_lifetime_peak_rss_kib": 180560,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 100,
+        "repeat": 3,
+        "label": "student-r3-c100"
+      },
+      "formal_resource_samples": 6,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 32,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.092647650977597,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.413225534871444,
+      "started_unix": 1795401170.8834648,
+      "ended_unix": 1795401176.9761124,
+      "latency_ms": {
+        "p50": 1893.1644750991836,
+        "p95": 1905.4919107118621,
+        "p99": 1916.2630503508265
+      },
+      "generator_measurement_cpu_seconds": 0.599124419,
+      "generator_cpu_one_core_100": 9.833564212495817,
+      "generator_lifetime_peak_rss_kib": 181084,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 32,
+        "repeat": 3,
+        "label": "student-r3-c32"
+      },
+      "formal_resource_samples": 5,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "student",
+      "C": 16,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 6.058063440956175,
+      "all_100_successful": true,
+      "successful_images_per_s": 16.506925187336183,
+      "started_unix": 1795401179.459833,
+      "ended_unix": 1795401185.5178964,
+      "latency_ms": {
+        "p50": 953.860545065254,
+        "p95": 964.1859268187545,
+        "p99": 967.68872048473
+      },
+      "generator_measurement_cpu_seconds": 0.571674302,
+      "generator_cpu_one_core_100": 9.436584934636633,
+      "generator_lifetime_peak_rss_kib": 182328,
+      "errors": {},
+      "job": {
+        "name": "student",
+        "C": 16,
+        "repeat": 3,
+        "label": "student-r3-c16"
+      },
+      "formal_resource_samples": 5,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 1,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 2.170464000897482,
+      "all_100_successful": true,
+      "successful_images_per_s": 46.073097714889634,
+      "started_unix": 1795401218.0323308,
+      "ended_unix": 1795401220.2027948,
+      "latency_ms": {
+        "p50": 21.77655103150755,
+        "p95": 24.347322387620807,
+        "p99": 25.501222168095413
+      },
+      "generator_measurement_cpu_seconds": 0.44460313900000004,
+      "generator_cpu_one_core_100": 20.484243867493664,
+      "generator_lifetime_peak_rss_kib": 182800,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 1,
+        "repeat": 1,
+        "label": "teacher-r1-c1"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 2,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.7519408301450312,
+      "all_100_successful": true,
+      "successful_images_per_s": 57.07955330416135,
+      "started_unix": 1795401222.707135,
+      "ended_unix": 1795401224.4590757,
+      "latency_ms": {
+        "p50": 34.93707254528999,
+        "p95": 36.066478525754064,
+        "p99": 37.70718661369759
+      },
+      "generator_measurement_cpu_seconds": 0.45636386100000004,
+      "generator_cpu_one_core_100": 26.049045330042386,
+      "generator_lifetime_peak_rss_kib": 189424,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 2,
+        "repeat": 1,
+        "label": "teacher-r1-c2"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 4,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.7504806390497833,
+      "all_100_successful": true,
+      "successful_images_per_s": 57.12716711581751,
+      "started_unix": 1795401226.9326398,
+      "ended_unix": 1795401228.6831205,
+      "latency_ms": {
+        "p50": 69.08858101814985,
+        "p95": 85.55169315077364,
+        "p99": 89.46319821756333
+      },
+      "generator_measurement_cpu_seconds": 0.45601589900000006,
+      "generator_cpu_one_core_100": 26.05089646964276,
+      "generator_lifetime_peak_rss_kib": 189688,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 4,
+        "repeat": 1,
+        "label": "teacher-r1-c4"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 8,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.7477929999586195,
+      "all_100_successful": true,
+      "successful_images_per_s": 57.21501344974352,
+      "started_unix": 1795401231.1563113,
+      "ended_unix": 1795401232.9041042,
+      "latency_ms": {
+        "p50": 137.51335197594017,
+        "p95": 155.69045052397996,
+        "p99": 165.56198147591203
+      },
+      "generator_measurement_cpu_seconds": 0.45113348200000003,
+      "generator_cpu_one_core_100": 25.81160824025963,
+      "generator_lifetime_peak_rss_kib": 190288,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 8,
+        "repeat": 1,
+        "label": "teacher-r1-c8"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 16,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.7835193499922752,
+      "all_100_successful": true,
+      "successful_images_per_s": 56.06891789563882,
+      "started_unix": 1795401235.3858082,
+      "ended_unix": 1795401237.1693275,
+      "latency_ms": {
+        "p50": 278.81422301288694,
+        "p95": 340.0917210849002,
+        "p99": 348.80221480969345
+      },
+      "generator_measurement_cpu_seconds": 0.48618820300000004,
+      "generator_cpu_one_core_100": 27.260046435835182,
+      "generator_lifetime_peak_rss_kib": 190496,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 16,
+        "repeat": 1,
+        "label": "teacher-r1-c16"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 32,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.8457714470569044,
+      "all_100_successful": true,
+      "successful_images_per_s": 54.17788868684186,
+      "started_unix": 1795401239.6598194,
+      "ended_unix": 1795401241.505591,
+      "latency_ms": {
+        "p50": 552.8757043648511,
+        "p95": 686.5784181281924,
+        "p99": 715.1105378055945
+      },
+      "generator_measurement_cpu_seconds": 0.5642355880000001,
+      "generator_cpu_one_core_100": 30.569092879818772,
+      "generator_lifetime_peak_rss_kib": 191072,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 32,
+        "repeat": 1,
+        "label": "teacher-r1-c32"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 50,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.9260392358992249,
+      "all_100_successful": true,
+      "successful_images_per_s": 51.92002225921022,
+      "started_unix": 1795401243.9901218,
+      "ended_unix": 1795401245.916161,
+      "latency_ms": {
+        "p50": 825.971582904458,
+        "p95": 1105.5278272251599,
+        "p99": 1127.0056208944882
+      },
+      "generator_measurement_cpu_seconds": 0.590212308,
+      "generator_cpu_one_core_100": 30.64383616901984,
+      "generator_lifetime_peak_rss_kib": 191088,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 50,
+        "repeat": 1,
+        "label": "teacher-r1-c50"
+      },
+      "formal_resource_samples": 1,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 100,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 2.189871592214331,
+      "all_100_successful": true,
+      "successful_images_per_s": 45.66477795115058,
+      "started_unix": 1795401248.4115582,
+      "ended_unix": 1795401250.6014297,
+      "latency_ms": {
+        "p50": 1760.0199815351516,
+        "p95": 2059.1724350117147,
+        "p99": 2100.9417455736548
+      },
+      "generator_measurement_cpu_seconds": 0.5728309500000001,
+      "generator_cpu_one_core_100": 26.158198135296644,
+      "generator_lifetime_peak_rss_kib": 191684,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 100,
+        "repeat": 1,
+        "label": "teacher-r1-c100"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 100,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 2.1972806989215314,
+      "all_100_successful": true,
+      "successful_images_per_s": 45.51079889295981,
+      "started_unix": 1795401253.0931554,
+      "ended_unix": 1795401255.290436,
+      "latency_ms": {
+        "p50": 1806.6883775172755,
+        "p95": 2070.885515306145,
+        "p99": 2098.3244728203863
+      },
+      "generator_measurement_cpu_seconds": 0.576200263,
+      "generator_cpu_one_core_100": 26.22333429146356,
+      "generator_lifetime_peak_rss_kib": 191948,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 100,
+        "repeat": 2,
+        "label": "teacher-r2-c100"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 50,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.9176278240047395,
+      "all_100_successful": true,
+      "successful_images_per_s": 52.147762328125694,
+      "started_unix": 1795401257.7806563,
+      "ended_unix": 1795401259.6982841,
+      "latency_ms": {
+        "p50": 812.9967144923285,
+        "p95": 1108.2607267191634,
+        "p99": 1146.0003966209479
+      },
+      "generator_measurement_cpu_seconds": 0.6057561650000001,
+      "generator_cpu_one_core_100": 31.588828521216893,
+      "generator_lifetime_peak_rss_kib": 192544,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 50,
+        "repeat": 2,
+        "label": "teacher-r2-c50"
+      },
+      "formal_resource_samples": 1,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 32,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.8467046220321208,
+      "all_100_successful": true,
+      "successful_images_per_s": 54.15051156906708,
+      "started_unix": 1795401262.2135887,
+      "ended_unix": 1795401264.0602934,
+      "latency_ms": {
+        "p50": 551.6183184226975,
+        "p95": 696.500894066412,
+        "p99": 718.8165031070822
+      },
+      "generator_measurement_cpu_seconds": 0.558821834,
+      "generator_cpu_one_core_100": 30.260488187064276,
+      "generator_lifetime_peak_rss_kib": 192548,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 32,
+        "repeat": 2,
+        "label": "teacher-r2-c32"
+      },
+      "formal_resource_samples": 1,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 16,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.778219718951732,
+      "all_100_successful": true,
+      "successful_images_per_s": 56.23602018031294,
+      "started_unix": 1795401266.5470645,
+      "ended_unix": 1795401268.3252842,
+      "latency_ms": {
+        "p50": 279.233785928227,
+        "p95": 335.31583342701197,
+        "p99": 356.60496247001004
+      },
+      "generator_measurement_cpu_seconds": 0.473365845,
+      "generator_cpu_one_core_100": 26.62021121209089,
+      "generator_lifetime_peak_rss_kib": 193144,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 16,
+        "repeat": 2,
+        "label": "teacher-r2-c16"
+      },
+      "formal_resource_samples": 1,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 8,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.8265641669277102,
+      "all_100_successful": true,
+      "successful_images_per_s": 54.747597599158254,
+      "started_unix": 1795401270.831957,
+      "ended_unix": 1795401272.6585212,
+      "latency_ms": {
+        "p50": 140.97642351407558,
+        "p95": 171.3793765171431,
+        "p99": 176.55978127382699
+      },
+      "generator_measurement_cpu_seconds": 0.470116042,
+      "generator_cpu_one_core_100": 25.737723892324983,
+      "generator_lifetime_peak_rss_kib": 193408,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 8,
+        "repeat": 2,
+        "label": "teacher-r2-c8"
+      },
+      "formal_resource_samples": 1,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 4,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.776390319922939,
+      "all_100_successful": true,
+      "successful_images_per_s": 56.293934322012106,
+      "started_unix": 1795401275.2081418,
+      "ended_unix": 1795401276.984532,
+      "latency_ms": {
+        "p50": 69.69210947863758,
+        "p95": 87.25271368166432,
+        "p99": 87.95071242144333
+      },
+      "generator_measurement_cpu_seconds": 0.453702367,
+      "generator_cpu_one_core_100": 25.540691249639437,
+      "generator_lifetime_peak_rss_kib": 194008,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 4,
+        "repeat": 2,
+        "label": "teacher-r2-c4"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 2,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.7730787671171129,
+      "all_100_successful": true,
+      "successful_images_per_s": 56.399073664726224,
+      "started_unix": 1795401279.4842365,
+      "ended_unix": 1795401281.2573152,
+      "latency_ms": {
+        "p50": 35.10413598269224,
+        "p95": 37.63651716290042,
+        "p99": 38.36177723715085
+      },
+      "generator_measurement_cpu_seconds": 0.45831414400000003,
+      "generator_cpu_one_core_100": 25.84849316904194,
+      "generator_lifetime_peak_rss_kib": 194216,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 2,
+        "repeat": 2,
+        "label": "teacher-r2-c2"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 1,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 2.2970179431140423,
+      "all_100_successful": true,
+      "successful_images_per_s": 43.53470563857724,
+      "started_unix": 1795401283.7871075,
+      "ended_unix": 1795401286.0841255,
+      "latency_ms": {
+        "p50": 23.06763152591884,
+        "p95": 25.647725095041096,
+        "p99": 26.275064684450633
+      },
+      "generator_measurement_cpu_seconds": 0.468895066,
+      "generator_cpu_one_core_100": 20.413208673691248,
+      "generator_lifetime_peak_rss_kib": 194756,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 1,
+        "repeat": 2,
+        "label": "teacher-r2-c1"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 2,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.756335647078231,
+      "all_100_successful": true,
+      "successful_images_per_s": 56.93672514496643,
+      "started_unix": 1795401288.5692093,
+      "ended_unix": 1795401290.325545,
+      "latency_ms": {
+        "p50": 34.87117844633758,
+        "p95": 36.44621785497293,
+        "p99": 37.537809154018795
+      },
+      "generator_measurement_cpu_seconds": 0.456299625,
+      "generator_cpu_one_core_100": 25.980206332376255,
+      "generator_lifetime_peak_rss_kib": 194808,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 2,
+        "repeat": 3,
+        "label": "teacher-r3-c2"
+      },
+      "formal_resource_samples": 1,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 50,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.9121553380973637,
+      "all_100_successful": true,
+      "successful_images_per_s": 52.297006423914375,
+      "started_unix": 1795401292.816835,
+      "ended_unix": 1795401294.7289903,
+      "latency_ms": {
+        "p50": 815.1766220107675,
+        "p95": 1087.9395223339088,
+        "p99": 1141.2605924950915
+      },
+      "generator_measurement_cpu_seconds": 0.609444468,
+      "generator_cpu_one_core_100": 31.872121258015078,
+      "generator_lifetime_peak_rss_kib": 195404,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 50,
+        "repeat": 3,
+        "label": "teacher-r3-c50"
+      },
+      "formal_resource_samples": 1,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 1,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 2.166938181966543,
+      "all_100_successful": true,
+      "successful_images_per_s": 46.14806312067834,
+      "started_unix": 1795401297.257073,
+      "ended_unix": 1795401299.424011,
+      "latency_ms": {
+        "p50": 21.65871497709304,
+        "p95": 24.224411451723427,
+        "p99": 24.795056281145673
+      },
+      "generator_measurement_cpu_seconds": 0.44140609900000005,
+      "generator_cpu_one_core_100": 20.370036518504396,
+      "generator_lifetime_peak_rss_kib": 195668,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 1,
+        "repeat": 3,
+        "label": "teacher-r3-c1"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 8,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.7644677821081132,
+      "all_100_successful": true,
+      "successful_images_per_s": 56.67431336180258,
+      "started_unix": 1795401301.9475648,
+      "ended_unix": 1795401303.7120326,
+      "latency_ms": {
+        "p50": 138.89990001916885,
+        "p95": 160.62989580677822,
+        "p99": 163.01130154635757
+      },
+      "generator_measurement_cpu_seconds": 0.45196706,
+      "generator_cpu_one_core_100": 25.614922787652628,
+      "generator_lifetime_peak_rss_kib": 196228,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 8,
+        "repeat": 3,
+        "label": "teacher-r3-c8"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 4,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.772161962930113,
+      "all_100_successful": true,
+      "successful_images_per_s": 56.428250967907495,
+      "started_unix": 1795401306.1875143,
+      "ended_unix": 1795401307.9596763,
+      "latency_ms": {
+        "p50": 69.82181582134217,
+        "p95": 86.195491370745,
+        "p99": 88.91481824684888
+      },
+      "generator_measurement_cpu_seconds": 0.448659048,
+      "generator_cpu_one_core_100": 25.317045359566453,
+      "generator_lifetime_peak_rss_kib": 196268,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 4,
+        "repeat": 3,
+        "label": "teacher-r3-c4"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 100,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 2.20475241006352,
+      "all_100_successful": true,
+      "successful_images_per_s": 45.356566816098386,
+      "started_unix": 1795401310.4831374,
+      "ended_unix": 1795401312.6878898,
+      "latency_ms": {
+        "p50": 1854.5969076221809,
+        "p95": 2087.3413313529454,
+        "p99": 2122.6527412678115
+      },
+      "generator_measurement_cpu_seconds": 0.5778322200000001,
+      "generator_cpu_one_core_100": 26.208485694924466,
+      "generator_lifetime_peak_rss_kib": 196864,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 100,
+        "repeat": 3,
+        "label": "teacher-r3-c100"
+      },
+      "formal_resource_samples": 2,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 32,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.826820031972602,
+      "all_100_successful": true,
+      "successful_images_per_s": 54.7399296317218,
+      "started_unix": 1795401315.1827338,
+      "ended_unix": 1795401317.009554,
+      "latency_ms": {
+        "p50": 547.2914684796706,
+        "p95": 695.9904560586438,
+        "p99": 705.6553999008612
+      },
+      "generator_measurement_cpu_seconds": 0.5662180299999999,
+      "generator_cpu_one_core_100": 30.994735118412137,
+      "generator_lifetime_peak_rss_kib": 197128,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 32,
+        "repeat": 3,
+        "label": "teacher-r3-c32"
+      },
+      "formal_resource_samples": 1,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 16,
+      "requests": 100,
+      "successful": 100,
+      "failed": 0,
+      "makespan_s": 1.7905637931544334,
+      "all_100_successful": true,
+      "successful_images_per_s": 55.84833133693056,
+      "started_unix": 1795401319.5334015,
+      "ended_unix": 1795401321.3239653,
+      "latency_ms": {
+        "p50": 281.85709239915013,
+        "p95": 340.9924884908832,
+        "p99": 359.6480756648817
+      },
+      "generator_measurement_cpu_seconds": 0.470673091,
+      "generator_cpu_one_core_100": 26.286306737545274,
+      "generator_lifetime_peak_rss_kib": 197128,
+      "errors": {},
+      "job": {
+        "name": "teacher",
+        "C": 16,
+        "repeat": 3,
+        "label": "teacher-r3-c16"
+      },
+      "formal_resource_samples": 1,
+      "resource_pid_roles": [
+        "controller",
+        "load_generator",
+        "server"
+      ]
+    }
+  ],
+  "points": [
+    {
+      "name": "sync",
+      "C": 1,
+      "seconds": [
+        6.884962774813175,
+        6.950601198943332,
+        6.914343304000795
+      ],
+      "median_s": 6.914343304000795,
+      "min_s": 6.884962774813175,
+      "max_s": 6.950601198943332,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 14.462689456298438,
+      "pooled_success_p95_ms": 72.1114439656958,
+      "generator_cpu_percent": 7.113209776036782,
+      "resource_samples": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 2,
+      "seconds": [
+        6.8232992209959775,
+        6.8817702669184655,
+        6.90334414690733
+      ],
+      "median_s": 6.8817702669184655,
+      "min_s": 6.8232992209959775,
+      "max_s": 6.90334414690733,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 14.531144766734306,
+      "pooled_success_p95_ms": 144.0247508464381,
+      "generator_cpu_percent": 6.670126960560144,
+      "resource_samples": [
+        6,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 4,
+      "seconds": [
+        6.470266333082691,
+        6.483019843930379,
+        6.487727273022756
+      ],
+      "median_s": 6.483019843930379,
+      "min_s": 6.470266333082691,
+      "max_s": 6.487727273022756,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 15.424910366983276,
+      "pooled_success_p95_ms": 267.3399130348117,
+      "generator_cpu_percent": 7.4972845306956675,
+      "resource_samples": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 8,
+      "seconds": [
+        6.479341101134196,
+        6.498005399014801,
+        6.497579482849687
+      ],
+      "median_s": 6.497579482849687,
+      "min_s": 6.479341101134196,
+      "max_s": 6.498005399014801,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 15.390346553504925,
+      "pooled_success_p95_ms": 555.3829798242077,
+      "generator_cpu_percent": 7.9214576391548395,
+      "resource_samples": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 16,
+      "seconds": [
+        6.556877891998738,
+        6.590695583960041,
+        6.590704133035615
+      ],
+      "median_s": 6.590695583960041,
+      "min_s": 6.556877891998738,
+      "max_s": 6.590704133035615,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 15.172905306592035,
+      "pooled_success_p95_ms": 1119.7329520597123,
+      "generator_cpu_percent": 8.044908256211825,
+      "resource_samples": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 32,
+      "seconds": [
+        6.5726947819348425,
+        6.602096945978701,
+        6.615215369965881
+      ],
+      "median_s": 6.602096945978701,
+      "min_s": 6.5726947819348425,
+      "max_s": 6.615215369965881,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 15.146702754934463,
+      "pooled_success_p95_ms": 2256.13582059741,
+      "generator_cpu_percent": 8.931962728752174,
+      "resource_samples": [
+        6,
+        7,
+        7
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 50,
+      "seconds": [
+        6.641062413109466,
+        6.653923023957759,
+        6.716611701063812
+      ],
+      "median_s": 6.653923023957759,
+      "min_s": 6.641062413109466,
+      "max_s": 6.716611701063812,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 15.028728111212791,
+      "pooled_success_p95_ms": 3505.186705419328,
+      "generator_cpu_percent": 10.83056676605883,
+      "resource_samples": [
+        6,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "sync",
+      "C": 100,
+      "seconds": [
+        6.9655431841965765,
+        7.150111696217209,
+        7.1792790710460395
+      ],
+      "median_s": 7.150111696217209,
+      "min_s": 6.9655431841965765,
+      "max_s": 7.1792790710460395,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 13.985795502034652,
+      "pooled_success_p95_ms": 6981.200610776432,
+      "generator_cpu_percent": 8.160394209069018,
+      "resource_samples": [
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "name": "student",
+      "C": 1,
+      "seconds": [
+        7.590177105972543,
+        7.589658169075847,
+        7.611613347195089
+      ],
+      "median_s": 7.590177105972543,
+      "min_s": 7.589658169075847,
+      "max_s": 7.611613347195089,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 13.174923141294318,
+      "pooled_success_p95_ms": 78.85575394611806,
+      "generator_cpu_percent": 6.534769354443052,
+      "resource_samples": [
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "name": "student",
+      "C": 2,
+      "seconds": [
+        5.93464187392965,
+        5.9794510011561215,
+        5.9639094159938395
+      ],
+      "median_s": 5.9639094159938395,
+      "min_s": 5.93464187392965,
+      "max_s": 5.9794510011561215,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 16.76752496136559,
+      "pooled_success_p95_ms": 122.0749969012104,
+      "generator_cpu_percent": 9.779047941348173,
+      "resource_samples": [
+        6,
+        6,
+        5
+      ]
+    },
+    {
+      "name": "student",
+      "C": 4,
+      "seconds": [
+        6.004382747923955,
+        5.97241969499737,
+        5.966807464836165
+      ],
+      "median_s": 5.97241969499737,
+      "min_s": 5.966807464836165,
+      "max_s": 6.004382747923955,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 16.743632414808722,
+      "pooled_success_p95_ms": 242.15261387871578,
+      "generator_cpu_percent": 9.755642231406329,
+      "resource_samples": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "name": "student",
+      "C": 8,
+      "seconds": [
+        6.084843550110236,
+        6.020362282171845,
+        5.978559284005314
+      ],
+      "median_s": 6.020362282171845,
+      "min_s": 5.978559284005314,
+      "max_s": 6.084843550110236,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 16.61029607738573,
+      "pooled_success_p95_ms": 486.74170514568686,
+      "generator_cpu_percent": 9.68652121798639,
+      "resource_samples": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "name": "student",
+      "C": 16,
+      "seconds": [
+        6.075245346873999,
+        6.054193895077333,
+        6.058063440956175
+      ],
+      "median_s": 6.058063440956175,
+      "min_s": 6.054193895077333,
+      "max_s": 6.075245346873999,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 16.506925187336183,
+      "pooled_success_p95_ms": 965.2504099998623,
+      "generator_cpu_percent": 10.05592014960255,
+      "resource_samples": [
+        6,
+        6,
+        5
+      ]
+    },
+    {
+      "name": "student",
+      "C": 32,
+      "seconds": [
+        6.153137221932411,
+        6.183076112996787,
+        6.092647650977597
+      ],
+      "median_s": 6.153137221932411,
+      "min_s": 6.092647650977597,
+      "max_s": 6.183076112996787,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 16.25187223901935,
+      "pooled_success_p95_ms": 1924.8635840136558,
+      "generator_cpu_percent": 10.106020884439152,
+      "resource_samples": [
+        6,
+        6,
+        5
+      ]
+    },
+    {
+      "name": "student",
+      "C": 50,
+      "seconds": [
+        6.20256499806419,
+        6.242126470897347,
+        6.3493140649516135
+      ],
+      "median_s": 6.242126470897347,
+      "min_s": 6.20256499806419,
+      "max_s": 6.3493140649516135,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 16.020181658643057,
+      "pooled_success_p95_ms": 3001.6388977644965,
+      "generator_cpu_percent": 9.875452359801232,
+      "resource_samples": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "name": "student",
+      "C": 100,
+      "seconds": [
+        6.379506468074396,
+        6.464945768006146,
+        6.368147094035521
+      ],
+      "median_s": 6.379506468074396,
+      "min_s": 6.368147094035521,
+      "max_s": 6.464945768006146,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 15.67519376309751,
+      "pooled_success_p95_ms": 5807.171073229983,
+      "generator_cpu_percent": 11.480104456988517,
+      "resource_samples": [
+        6,
+        7,
+        6
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 1,
+      "seconds": [
+        2.170464000897482,
+        2.2970179431140423,
+        2.166938181966543
+      ],
+      "median_s": 2.170464000897482,
+      "min_s": 2.166938181966543,
+      "max_s": 2.2970179431140423,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 46.073097714889634,
+      "pooled_success_p95_ms": 24.764409649651498,
+      "generator_cpu_percent": 20.42234706684717,
+      "resource_samples": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 2,
+      "seconds": [
+        1.7519408301450312,
+        1.7730787671171129,
+        1.756335647078231
+      ],
+      "median_s": 1.756335647078231,
+      "min_s": 1.7519408301450312,
+      "max_s": 1.7730787671171129,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 56.93672514496643,
+      "pooled_success_p95_ms": 37.109591043554246,
+      "generator_cpu_percent": 25.958822434244926,
+      "resource_samples": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 4,
+      "seconds": [
+        1.7504806390497833,
+        1.776390319922939,
+        1.772161962930113
+      ],
+      "median_s": 1.772161962930113,
+      "min_s": 1.7504806390497833,
+      "max_s": 1.776390319922939,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 56.428250967907495,
+      "pooled_success_p95_ms": 86.7855983437039,
+      "generator_cpu_percent": 25.634438095021668,
+      "resource_samples": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 8,
+      "seconds": [
+        1.7477929999586195,
+        1.8265641669277102,
+        1.7644677821081132
+      ],
+      "median_s": 1.7644677821081132,
+      "min_s": 1.7477929999586195,
+      "max_s": 1.8265641669277102,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 56.67431336180258,
+      "pooled_success_p95_ms": 164.2787203192711,
+      "generator_cpu_percent": 25.721326267845566,
+      "resource_samples": [
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 16,
+      "seconds": [
+        1.7835193499922752,
+        1.778219718951732,
+        1.7905637931544334
+      ],
+      "median_s": 1.7835193499922752,
+      "min_s": 1.778219718951732,
+      "max_s": 1.7905637931544334,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 56.06891789563882,
+      "pooled_success_p95_ms": 339.95723283151165,
+      "generator_cpu_percent": 26.72171541576892,
+      "resource_samples": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 32,
+      "seconds": [
+        1.8457714470569044,
+        1.8467046220321208,
+        1.826820031972602
+      ],
+      "median_s": 1.8457714470569044,
+      "min_s": 1.826820031972602,
+      "max_s": 1.8467046220321208,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 54.17788868684186,
+      "pooled_success_p95_ms": 695.8236873149872,
+      "generator_cpu_percent": 30.606719064684185,
+      "resource_samples": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 50,
+      "seconds": [
+        1.9260392358992249,
+        1.9176278240047395,
+        1.9121553380973637
+      ],
+      "median_s": 1.9176278240047395,
+      "min_s": 1.9121553380973637,
+      "max_s": 1.9260392358992249,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 52.147762328125694,
+      "pooled_success_p95_ms": 1105.5278272251599,
+      "generator_cpu_percent": 31.36672426909694,
+      "resource_samples": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "teacher",
+      "C": 100,
+      "seconds": [
+        2.189871592214331,
+        2.1972806989215314,
+        2.20475241006352
+      ],
+      "median_s": 2.1972806989215314,
+      "min_s": 2.189871592214331,
+      "max_s": 2.20475241006352,
+      "successful": 300,
+      "failed": 0,
+      "valid": true,
+      "tps_100_over_median": 45.51079889295981,
+      "pooled_success_p95_ms": 2079.908013390377,
+      "generator_cpu_percent": 26.19672934115387,
+      "resource_samples": [
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "recommendations": {
+    "sync": {
+      "best": 4,
+      "platform_candidate": 4,
+      "candidate_median_s": 6.483019843930379,
+      "best_median_s": 6.483019843930379
+    },
+    "student": {
+      "best": 2,
+      "platform_candidate": 2,
+      "candidate_median_s": 5.9639094159938395,
+      "best_median_s": 5.9639094159938395
+    },
+    "teacher": {
+      "best": 2,
+      "platform_candidate": 2,
+      "candidate_median_s": 1.756335647078231,
+      "best_median_s": 1.756335647078231
+    }
+  },
+  "cleanup": {
+    "server_pid": 1702522,
+    "server_returncode": -15,
+    "port_closed": true,
+    "gpu": "3 MiB, 13 %",
+    "unix": 1795401324.0203345
+  },
+  "roles_observed": [
+    "controller",
+    "load_generator",
+    "server"
+  ],
+  "total_requests": 7200,
+  "successful": 7200,
+  "failed": 0,
+  "post_cleanup_recheck": {
+    "result": {
+      "completed_cases": 72,
+      "requests": 7200,
+      "completed_unix": 1795401323.6119523
+    },
+    "cases": 72,
+    "failed": 0,
+    "pid_exists": false,
+    "controller_error": null,
+    "port_closed": true,
+    "samples": [
+      {
+        "unix": 1795402523.0871913,
+        "gpu": "3 MiB, 0 %"
+      },
+      {
+        "unix": 1795402524.1523385,
+        "gpu": "3 MiB, 0 %"
+      },
+      {
+        "unix": 1795402525.216203,
+        "gpu": "3 MiB, 0 %"
+      }
+    ]
+  }
+}
