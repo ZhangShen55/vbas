@@ -210,4 +210,4 @@ Docker 镜像中 `LABEL authors="SeaCraft"`。具体开源协议以仓库内授�
 
 当前并行版`/AE/SyncTasks2`的完整worker/并发矩阵、持续压力、单张耗时、路数折算及历史测试适用性见[现行TRT全面复测](docs/20261123-synctasks2-trt-revalidation/README.md)。
 
-单张3090、三个接口分别运行时的每路2帧/秒折算、worker/并发取舍及单张耗时，见[路数汇总报告](docs/20261123-rtx3090-2fps-capacity-report.md)。
+单张3090、三个接口分别运行时的每路2帧/秒折算、worker/并发取舍及单张耗时，见[路数汇总报告](docs/20261123-RTX3090三接口每秒2帧路数评估报告.md)。
