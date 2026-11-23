@@ -1,0 +1,39 @@
+{
+  "raw_package_sha256": "d84a3bc493bd6e37573b3c5413582c93f9fef071081f80ff26c8751296df7319",
+  "raw_members_verified": 3516,
+  "server_local_summary_byte_identical": true,
+  "private_summary_sha256": "d0704f5f87ad0c6b6729fb423194f036ea5890e6385c5ac4a3c5a341824f9ad1",
+  "published_summary_sha256": "59cc01f66dc9be6317b1d159860734cb30cb114334287d9d5fcbc745c7143a08",
+  "fixed_csv_sha256": "784f4d4147cc33ff22f172fd91d66afc8aef89b8ffbd7ce00e3f99c55d7864c0",
+  "fixed_groups": 96,
+  "fixed_requests": 9600,
+  "fixed_failed": 0,
+  "pressure_groups": 9,
+  "pressure_requests": 41544,
+  "pressure_failed": 1,
+  "full_pool_aggregate_recomputed": true,
+  "feature_request_hashes_recomputed": 42,
+  "feature_asset_hashes_recomputed": true,
+  "openapi_count": 31,
+  "figures": {
+    "adopted": "r2",
+    "visual_checked": [
+      "fixed100.png (byte-identical to viewed r1)",
+      "pressure.png"
+    ],
+    "r1_preserved": true,
+    "changes_from_r1": "failure label wording and integer failure-count ticks only",
+    "xml_parsed": 2,
+    "data_range_checks": [
+      {
+        "figure": "fixed100",
+        "all_line_values_inside_y_limits": true
+      },
+      {
+        "figure": "pressure",
+        "all_line_values_inside_y_limits": true
+      }
+    ]
+  },
+  "scope": "finite current TRT endpoint validation; no ground truth accuracy, production adoption or video arrival validation"
+}

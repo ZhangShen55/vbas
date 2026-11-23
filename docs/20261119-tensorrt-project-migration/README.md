@@ -1,5 +1,7 @@
 # 项目统一 TensorRT Engine 迁移方案
 
+> 2026-11-23版本适用性：SyncTasks2已改为双模型线程并行；本任务原人数性能/时延/路数属于对应历史版本。现行TRT全面复测与适用范围见[新任务](../20261123-synctasks2-trt-revalidation/README.md)及[文档对应表](../20261123-synctasks2-trt-revalidation/08-document-impact-index.md)。原始结果保留，学生/教师性能不在本次重跑范围。
+
 状态：约定工作完成（37/37，2026-11-20）。用户缩减重复配对后14配对+三稳定性全部完成；最终main192调用一致，十个证据包全部本机核验。服务RSS增长、PT/TRT差异及类别覆盖如实保留，用户已表示满意本轮结果；部署仍待另行决定，未部署。任务目录创建日期保留2026-11-19。
 
 最终入口：[完成交接](reports/20261119-final/report.md)、[效率检查点](reports/20261120-efficiency-checkpoint/report.md)、[有限性能/资源](reports/20261120-performance/report.md)、[完整备份索引](reports/20261119-evidence-index/report.md)。

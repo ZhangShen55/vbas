@@ -1,5 +1,7 @@
 # 推理性能与精度优化计划
 
+> 2026-11-23版本适用性：SyncTasks2已改为双模型线程并行；本任务原人数性能/时延/路数属于对应历史版本。现行TRT全面复测与适用范围见[新任务](../20261123-synctasks2-trt-revalidation/README.md)及[文档对应表](../20261123-synctasks2-trt-revalidation/08-document-impact-index.md)。原始结果保留，学生/教师性能不在本次重跑范围。
+
 状态：执行中。两后端各5901次修正版基线、四模型FP16 I/O引擎、原容量143轮及人数C256补证均已采集和备份；I1/C1/b1三接口18组同配置配对亦完成并完整备份，全量并发业务审计11802次均与各自基线规范化一致并完成备份，HTTP统计开关12组亦完成并完整备份，发生器4组GPU工具预检亦通过并备份，接续42组教师正式补证。最新一致性见 [修正版报告](reports/20261118-precision-comparison-corrected/report.md)，容量边界见 [C256补证](reports/20261119-sync-c256/report.md)，连续执行状态见 [检查点](reports/20261118-execution-status/README.md)。教师发生器、显式回退/输入成本及最终报告/验收等尚未完成。
 
 2026-11-19 09:40恢复连接后确认：原PyTorch69轮/TRT74轮全部自然结束、无未完成轮，指定GPU空闲。完整143轮2797文件已本机校验备份。TRT[学生21轮](reports/20261119-trt-student-capacity/report.md)及[教师29轮](reports/20261119-trt-teacher-capacity/report.md)已归集；教师发生器限制仍需独立补证。之后C256两轮亦完成并备份，失败点不推荐；同一b15dd39的[固定配对](reports/20261119-backend-paired/report.md)18组107942次均成功。全部cleanup且GPU空闲后才同步e90b31f，两环境各32项CPU回归通过，六组独立业务审计11802次通过并完整备份，42份运行OpenAPI结构一致。

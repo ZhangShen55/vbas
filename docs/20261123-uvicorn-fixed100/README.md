@@ -1,5 +1,7 @@
 # Uvicorn单worker三接口固定100图并发拐点
 
+> 2026-11-23版本适用性：SyncTasks2已改为双模型线程并行；本任务原人数性能/时延/路数属于对应历史版本。现行TRT全面复测与适用范围见[新任务](../20261123-synctasks2-trt-revalidation/README.md)及[文档对应表](../20261123-synctasks2-trt-revalidation/08-document-impact-index.md)。原始结果保留，学生/教师性能不在本次重跑范围。
+
 状态：已完成：完整Uvicorn main:app、workers=1，72组/7200正式请求全部成功；100图三轮中位：人数C4为6.483秒、学生C2为5.964秒、教师C2为1.756秒（以最终报告精确值为准）。后端已关闭，PID不存在、18985端口关闭、GPU连续三次3MiB/0%。612文件原始包已本机整包/逐成员核验，报告和三幅曲线已核查；未部署、未修改模型/服务。
 
 [最终报告](reports/20261123-fixed100/report.md)；[历史连接检查点](reports/20261123-connection-checkpoint/report.md)。

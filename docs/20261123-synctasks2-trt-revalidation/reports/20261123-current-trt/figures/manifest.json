@@ -1,0 +1,39 @@
+{
+  "summary_sha256": "d0704f5f87ad0c6b6729fb423194f036ea5890e6385c5ac4a3c5a341824f9ad1",
+  "script_sha256": "4115570f1778e9cc008f5714a4cf31f5d2e32c18ddb93db7f609246693a404b8",
+  "matplotlib": "3.9.4",
+  "files": [
+    {
+      "file": "fixed100.png",
+      "bytes": 204153,
+      "sha256": "4fc7efd55696f56566758687015cbe99492b5ff4b94aea33754b68abe0f622aa"
+    },
+    {
+      "file": "fixed100.svg",
+      "bytes": 104861,
+      "sha256": "2133a4f34e21e640ce4b3c783a9df562df735e57e6fdfce10d43868394da66b3"
+    },
+    {
+      "file": "pressure.png",
+      "bytes": 131368,
+      "sha256": "0fdc03b86f5e476bc6bc5f9e0ce1b35ab92f5184a9b132afecec62c0484bf91e"
+    },
+    {
+      "file": "pressure.svg",
+      "bytes": 67877,
+      "sha256": "c7daed1deef2a6ded5b3ab22d7fd48da823c5fafdf8f4765579ec539cded5a1f"
+    }
+  ],
+  "range_checks": [
+    {
+      "figure": "fixed100",
+      "all_line_values_inside_y_limits": true
+    },
+    {
+      "figure": "pressure",
+      "all_line_values_inside_y_limits": true
+    }
+  ],
+  "published_summary_sha256": "59cc01f66dc9be6317b1d159860734cb30cb114334287d9d5fcbc745c7143a08",
+  "input_note": "Private input summary is byte-identical between server and local recomputation; published summary removes private image error details only. Plot fields are identical."
+}
